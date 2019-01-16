@@ -7,7 +7,9 @@
     "pages/addFunction/addFunction",
     "pages/deployFunctions/deployFunctions",
     "pages/chooseLib/chooseLib",
-    "pages/pshareIndex/pshareIndex"
+    "pages/pshareIndex/pshareIndex",
+    "pages/my",
+    "pages/my/my"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
