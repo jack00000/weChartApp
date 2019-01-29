@@ -171,9 +171,10 @@
 </view>
 
 <!--底部导航栏-->
-<i-tab-bar current="{{ current }}" color="#f759ab" bindchange="handleChange">
-    <i-tab-bar-item key="homepage" icon="homepage" current-icon="homepage_fill" title="首页"></i-tab-bar-item>
-    <i-tab-bar-item key="group" icon="group" current-icon="group_fill" title="朋友"></i-tab-bar-item>
-    <i-tab-bar-item key="remind" icon="remind" current-icon="remind_fill" title="通知"></i-tab-bar-item>
-    <i-tab-bar-item key="mine" icon="mine" current-icon="mine_fill" title="我的"></i-tab-bar-item>
-</i-tab-bar>
+ 
+<import src="../../template/nav" />
+  <view class="flex fix_nav_wp">
+  <block wx:for="{{navData}}">
+      <template is="nav" data="{{...item}}"/>
+  </block>
+  </view> 

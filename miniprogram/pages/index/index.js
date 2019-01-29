@@ -13,6 +13,40 @@ Page({
     active: 0,
     StatusBar: app.globalData.StatusBar,
     CustomBar: app.globalData.CustomBar,
+    navData: [
+      {
+        name: "index",  //文本
+        current: 1,    //是否是当前页，0不是  1是
+        style: 0,     //样式
+        ico: 'icon-homefill',  //不同图标
+        fn: 'gotoIndex'   //对应处理函数
+      }, {
+        name: "updating",
+        current: 0,
+        style: 0,
+        ico: 'icon-discover',
+        fn: 'gotoUpdating'
+      }, {
+        name: "publish",
+        current: 0,
+        style: 1,
+        ico: '',
+        fn: 'gotopublish'
+      }, {
+        name: "news",
+        current: 0,
+        style: 0,
+        ico: 'icon-commentfill',
+        fn: 'gotoMessages'
+      }, {
+        name: "my",
+        current: 0,
+        style: 0,
+        ico: 'icon-wode',
+        fn: 'bindViewMy'
+      },
+    ],
+
     iconList: [{
       icon: 'cardboardfill',
       color: 'red',
@@ -182,6 +216,36 @@ Page({
     this.setData({
       TabCur: e.currentTarget.dataset.id,
       scrollLeft: (e.currentTarget.dataset.id - 1) * 60
+    })
+  },
+  gotoIndex: function () {
+    wx.navigateTo({
+      url: '../index/index',
+    })
+  },
+  gotoUpdating: function () {
+    debugger;
+    wx.navigateTo({
+      url: '../updatings/updatings',
+    })
+
+  },
+  gotopublish: function () {
+    wx.navigateTo({
+      url: '../new/new',
+    })
+
+  },
+
+  gotoMessages: function () {
+    wx.navigateTo({
+      url: '../news/news',
+    })
+
+  },
+  bindViewMy: function () {
+    wx.navigateTo({
+      url: '../my/my',
     })
   }
   

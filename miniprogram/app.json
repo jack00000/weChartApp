@@ -1,11 +1,14 @@
 {
   "pages": [
+          "pages/index/index",
+        "pages/new/new",
+      "pages/updatings/updatings",
+
+
     "pages/news/news",
     "pages/my/my",
-    "pages/index/index",
     "pages/pshareIndex/pshareIndex",
-    "pages/new/new",
-    "pages/updatings/updatings",
+  
     "pages/news/chat/chat"
   ],
   "window": {
@@ -14,31 +17,7 @@
     "navigationBarBackgroundColor": "#F6F6F6",
     "navigationBarTitleText": "云开发 QuickStart",
     "navigationBarTextStyle": "black"
-  },
-  "tabBar": {
-    "color": "#a9b7b7",
-    "selectedColor": "#11cd6e",
-    "borderStyle": "black",
-    "list": [
-      {
-        "selectedIconPath": "images/logo.png",
-        "iconPath": "images/logo.png",
-        "pagePath": "pages/index/index",
-        "text": "首页"
-      },
-      {
-        "selectedIconPath": "images/logo.png",
-        "iconPath": "images/logo.png",
-        "pagePath": "pages/news/news",
-        "text": "一元投"
-      },
-      {
-        "selectedIconPath": "images/logo.png",
-        "iconPath": "images/logo.png",
-        "pagePath": "pages/my/my",
-        "text": "我的"
-      }
-    ]
   }
+  
  
 }

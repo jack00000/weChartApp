@@ -1,12 +1,86 @@
 // miniprogram/pages/updatings/updatings.js
+const app=getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    StatusBar: app.globalData.StatusBar,
+    CustomBar: app.globalData.CustomBar,
+    navData: [
+      {
+        
+        name: "index",  //文本
+        current: 1,    //是否是当前页，0不是  1是
+        style: 0,     //样式
+        ico: 'icon-homefill',  //不同图标
+        fn: 'gotoIndex'   //对应处理函数
+      }, {
+        name: "updating",
+        current: 0,
+        style: 0,
+        ico: 'icon-discover',
+        fn: 'gotoUpdating'
+      }, {
+        name: "publish",
+        current: 0,
+        style: 1,
+        ico: '',
+        fn: 'gotopublish'
+      }, {
+        name: "news",
+        current: 0,
+        style: 0,
+        ico: 'icon-commentfill',
+        fn: 'gotoMessages'
+      }, {
+        name: "my",
+        current: 0,
+        style: 0,
+        ico: 'icon-wode',
+        fn: 'bindViewMy'
+      },
+    ],
+
 
   },
+  isCard(e) {
+    this.setData({
+      isCard: e.detail.value
+    })
+  },
+
+  gotoIndex: function () {
+    wx.navigateTo({
+      url: '../index/index',
+    })
+  },
+  gotoUpdating: function () {
+    wx.navigateTo({
+      url: '../updatings/updatings',
+    })
+
+  },
+  gotopublish: function () {
+    wx.navigateTo({
+      url: '../new/new',
+    })
+
+  },
+
+  gotoMessages: function () {
+    wx.navigateTo({
+      url: '../news/news',
+    })
+
+  },
+  bindViewMy: function () {
+    wx.navigateTo({
+      url: '../my/my',
+    })
+  },
+
 
   /**
    * 生命周期函数--监听页面加载
