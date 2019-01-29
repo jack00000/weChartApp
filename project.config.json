@@ -12,6 +12,7 @@
 	"appid": "wx0fcb58eacbd56532",
 	"projectname": "whgc",
 	"libVersion": "2.2.5",
+	"compileType": "miniprogram",
 	"condition": {
 		"search": {
 			"current": -1,
