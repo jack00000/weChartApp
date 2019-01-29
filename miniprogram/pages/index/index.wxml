@@ -13,14 +13,19 @@
   </view>
 </view>
 <!--标签-->
-<view class='padding-sm flex flex-wrap'>
+<!-- <view class='padding-sm flex flex-wrap'>
   <view class="padding-xs" wx:for="{{ColorList}}" wx:key>
     <view class='cu-tag bg-{{item.name}}'>{{item.title}}</view>
   </view>
   <view class="padding-xs" wx:for="{{ColorList}}" wx:key wx:if="{{index<12}}">
     <view class='cu-tag bg-{{item.name}} light'>{{item.title}}</view>
   </view>
-</view>
+</view> -->
+<scroll-view scroll-x class="bg-white nav" scroll-with-animation scroll-left="{{scrollLeft}}">
+  <view class="cu-item {{index==TabCur?'text-green cur':''}}" wx:for="{{10}}" wx:key bindtap='tabSelect' data-id="{{index}}">
+    Tab{{index}}
+  </view>
+</scroll-view>
 
 <!--轮播图-->
 <swiper class="card-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500" bindchange="cardSwiper" indicator-color="#8799a3" indicator-active-color="#0081ff">
@@ -72,3 +77,10 @@
   </view>
 </view>
 
+<!--底部导航栏-->
+<i-tab-bar current="{{ current }}" color="#f759ab" bindchange="handleChange">
+    <i-tab-bar-item key="homepage" icon="homepage" current-icon="homepage_fill" title="首页"></i-tab-bar-item>
+    <i-tab-bar-item key="group" icon="group" current-icon="group_fill" title="朋友"></i-tab-bar-item>
+    <i-tab-bar-item key="remind" icon="remind" current-icon="remind_fill" title="通知"></i-tab-bar-item>
+    <i-tab-bar-item key="mine" icon="mine" current-icon="mine_fill" title="我的"></i-tab-bar-item>
+</i-tab-bar>

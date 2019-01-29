@@ -5,7 +5,9 @@
   "van-tabbar": "../../dist_vant/tabbar/index",
   "van-tabbar-item": "../../dist_vant/tabbar-item/index",
   "van-tab": "../../dist_vant/tab/index",
-  "van-tabs": "../../dist_vant/tabs/index"
+  "van-tabs": "../../dist_vant/tabs/index",
+  "i-tab-bar": "../../dist_iview/tab-bar/index",
+  "i-tab-bar-item": "../../dist_iview/tab-bar-item/index"
 
 }
 }

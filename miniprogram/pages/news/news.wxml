@@ -1,2 +1,30 @@
-<!--miniprogram/pages/news/news.wxml-->
-<text>miniprogram/pages/news/news.wxml</text>
+<view class="cu-bar solid-bottom margin-top">
+  <view class='action'>
+    <text class='icon-title text-orange '></text> 列表左滑
+  </view>
+</view>
+<view class="cu-list menu menu-avatar" bindtap='tochatview'>
+  <view class="cu-item {{modalName=='move-box-'+ index?'move-cur':''}}" wx:for="{{4}}" wx:key bindtouchstart='ListTouchStart' bindtouchmove='ListTouchMove' bindtouchend='ListTouchEnd' data-target="move-box-{{index}}">
+    <view class="cu-avatar round lg" style="background-image:url(https://image.weilanwl.com/img/square-{{index+1}}.jpg);"></view>
+    <view class='content'>
+      <view class='text-grey'>文晓港</view>
+      <view class='text-gray text-sm'>
+        <text class='icon-infofill text-red'></text> 消息未送达</view>
+    </view>
+    <view class='action'>
+      <view class='text-grey text-xs'>22:20</view>
+      <view class="cu-tag round bg-grey sm">5</view>
+    </view>
+    <view class='move'>
+      <view class='bg-grey'>置顶</view>
+      <view class="bg-red">删除</view>
+    </view>
+  </view>
+</view>
+<!--底部导航栏-->
+<i-tab-bar current="{{ current }}" color="#f759ab" bindchange="handleChange">
+    <i-tab-bar-item key="homepage" icon="homepage" current-icon="homepage_fill" title="首页"></i-tab-bar-item>
+    <i-tab-bar-item key="group" icon="group" current-icon="group_fill" title="朋友"></i-tab-bar-item>
+    <i-tab-bar-item key="remind" icon="remind" current-icon="remind_fill" title="通知"></i-tab-bar-item>
+    <i-tab-bar-item key="mine" icon="mine" current-icon="mine_fill" title="我的"></i-tab-bar-item>
+</i-tab-bar>

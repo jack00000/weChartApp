@@ -3,6 +3,8 @@ const app = getApp()
 
 Page({
   data: {
+    current: 'homepage',
+    ColorList: app.globalData.ColorList,
     avatarUrl: './user-unlogin.png',
     userInfo: {},
     logged: false,
@@ -170,6 +172,18 @@ Page({
       ListTouchDirection: null
     })
   },
+  handleChange({ detail }) {
+    this.setData({
+      current: detail.key
+    });
+  },
+  tabSelect(e) {
+    console.log(e);
+    this.setData({
+      TabCur: e.currentTarget.dataset.id,
+      scrollLeft: (e.currentTarget.dataset.id - 1) * 60
+    })
+  }
   
   
 })
