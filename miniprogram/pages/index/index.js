@@ -4,7 +4,7 @@ const app = getApp()
 Page({
   data: {
     current: 'homepage',
-    ColorList: app.globalData.ColorList,
+    //ColorList: app.globalData.ColorList,
     avatarUrl: './user-unlogin.png',
     userInfo: {},
     logged: false,
@@ -13,6 +13,99 @@ Page({
     active: 0,
     StatusBar: app.globalData.StatusBar,
     CustomBar: app.globalData.CustomBar,
+    ColorList: [{
+      title: '#java',
+      name: 'red',
+      color: '#e54d42'
+    },
+    {
+      title: '#python',
+      name: 'orange',
+      color: '#f37b1d'
+    },
+    {
+      title: '#c#',
+      name: 'yellow',
+      color: '#fbbd08'
+    },
+    {
+      title: '#c++',
+      name: 'olive',
+      color: '#8dc63f'
+    },
+    {
+      title: '#node.js',
+      name: 'green',
+      color: '#39b54a'
+    },
+    {
+      title: '#python',
+      name: 'cyan',
+      color: '#1cbbb4'
+    },
+    {
+      title: '#vb',
+      name: 'blue',
+      color: '#0081ff'
+    },
+    {
+      title: '#go',
+      name: 'purple',
+      color: '#6739b6'
+    },
+    {
+      title: '#ruby',
+      name: 'mauve',
+      color: '#9c26b0'
+    },
+    {
+      title: '#php',
+      name: 'pink',
+      color: '#e03997'
+    },
+    {
+      title: '#javascript',
+      name: 'brown',
+      color: '#a5673f'
+    },
+    {
+      title: '#kotlin',
+      name: 'grey',
+      color: '#8799a3'
+    },
+    {
+      title: '#pcle',
+      name: 'gray',
+      color: '#aaaaaa'
+    },
+    {
+      title: '#lua',
+      name: 'black',
+      color: '#333333'
+    },
+    ],
+    tower: [{
+      id: 0,
+      url: 'https://image.weilanwl.com/img/4x3-1.jpg'
+    }, {
+      id: 1,
+      url: 'https://image.weilanwl.com/img/4x3-2.jpg'
+    }, {
+      id: 2,
+      url: 'https://image.weilanwl.com/img/4x3-3.jpg'
+    }, {
+      id: 3,
+      url: 'https://image.weilanwl.com/img/4x3-4.jpg'
+    }, {
+      id: 4,
+      url: 'https://image.weilanwl.com/img/4x3-2.jpg'
+    }, {
+      id: 5,
+      url: 'https://image.weilanwl.com/img/4x3-4.jpg'
+    }, {
+      id: 6,
+      url: 'https://image.weilanwl.com/img/4x3-2.jpg'
+    }],
     navData: [
       {
         name: "index",  //文本
@@ -107,7 +200,7 @@ Page({
   },
   onLoad: function (options) {
     wx.request({
-      url: 'http://127.0.0.1:8080/ssm/admin', // 仅为示例，并非真实的接口地址
+      url: 'http://127.0.0.1:8080/ssm/getCategory', // 仅为示例，并非真实的接口地址
       data: {
         x: 'x',
         y: 'y'

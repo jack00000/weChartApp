@@ -1,14 +1,10 @@
 {
   "pages": [
-          "pages/index/index",
-        "pages/new/new",
-      "pages/updatings/updatings",
-
-
+    "pages/index/index",
+    "pages/new/new",
+    "pages/updatings/updatings",
     "pages/news/news",
     "pages/my/my",
-    "pages/pshareIndex/pshareIndex",
-  
     "pages/news/chat/chat"
   ],
   "window": {
