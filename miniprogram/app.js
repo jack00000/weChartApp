@@ -95,5 +95,36 @@ App({
       color: '#ffffff'
     },
     ]
+  },
+  
+  gotoIndex: function() {
+    wx.redirectTo({
+      url: '../index/index',
+    })
+  },
+  gotoUpdating: function () {
+    debugger;
+    wx.redirectTo({
+      url: '../updatings/updatings',
+    })
+
+  },
+  gotopublish: function () {
+    wx.redirectTo({
+      url: '../new/new',
+    })
+
+  },
+
+  gotoMessages: function () {
+    wx.redirectTo({
+      url: '../news/news',
+    })
+
+  },
+  bindViewMy: function () {
+    wx.redirectTo({
+      url: '../my/my',
+    })
   }
 })

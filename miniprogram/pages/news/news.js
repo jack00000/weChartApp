@@ -167,37 +167,37 @@ Page({
     });
   },
   tochatview:function(){
-    wx.navigateTo({
+    wx.redirectTo({
       url: './chat/chat'
     })
   },
   gotoIndex: function () {
-    wx.navigateTo({
+    wx.redirectTo({
       url: '../index/index',
     })
   },
   gotoUpdating: function () {
     debugger;
-    wx.navigateTo({
+    wx.redirectTo({
       url: '../updatings/updatings',
     })
 
   },
   gotopublish: function () {
-    wx.navigateTo({
+    wx.redirectTo({
       url: '../new/new',
     })
 
   },
 
   gotoMessages: function () {
-    wx.navigateTo({
+    wx.redirectTo({
       url: '../news/news',
     })
 
   },
   bindViewMy: function () {
-    wx.navigateTo({
+    wx.redirectTo({
       url: '../my/my',
     })
   }
