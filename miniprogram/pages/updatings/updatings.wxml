@@ -5,39 +5,8 @@
     </navigator>
   </view>
 </view>
-<view class="cu-bar solid-bottom">
-  <view class='action'>
-    <text class='icon-titles text-orange '></text> 案例类卡片
-  </view>
-  <view class='action'>
-    <switch class='sm' checked='{{isCard}}' bindchange='isCard'></switch>
-  </view>
-</view>
-<view class="cu-card case {{isCard?'no-card':''}}">
-  <view wx:for="{{1}}" wx:key class="cu-item shadow">
-    <view class='image'>
-      <image src="https://image.weilanwl.com/img/4x3-1.jpg" mode="widthFix"></image>
-      <view class="cu-tag bg-blue">福利</view>
-      <view class='cu-bar bg-shadeBottom'>我和制服不得不说的那些事！</view>
-    </view>
-    <view class="cu-list menu menu-avatar">
-      <view class="cu-item">
-        <view class="cu-avatar round lg" style="background-image:url(https://image.weilanwl.com/img/square-4.jpg);"></view>
-        <view class='content flex-sub'>
-          <view class='text-grey'>猪皮蛋</view>
-          <view class='text-gray text-sm flex justify-between'>
-            十天前
-            <view class="text-gray text-sm">
-              <text class="icon-attentionfill"></text> 10
-              <text class="icon-appreciatefill"></text> 20
-              <text class="icon-messagefill"></text> 30
-            </view>
-          </view>
-        </view>
-      </view>
-    </view>
-  </view>
-</view>
+
+
 <view class="cu-bar solid-bottom {{isCard?'margin-top':''}}">
   <view class='action'>
     <text class='icon-titles text-orange '></text> 动态类卡片
@@ -98,29 +67,6 @@
   </view>
 </view>
 
-<view class="cu-bar solid-bottom margin-top">
-  <view class='action'>
-    <text class='icon-titles text-orange '></text> 文章类卡片
-  </view>
-  <view class='action'>
-    <switch class='sm' checked='{{isCard}}' bindchange='isCard'></switch>
-  </view>
-</view>
-<view class="cu-card article {{isCard?'no-card':''}}">
-  <view wx:for="1" wx:key class="cu-item shadow">
-    <view class="title">这里有个戏精铲屎官，主子了解一下？</view>
-    <view class="content">
-      <image src="https://image.weilanwl.com/img/4x3-3.jpg" mode="aspectFill"></image>
-      <view class="desc">
-        <view class='text-content'> 这是一个伪铲屎官为了给自己的程序凑字数瞎几把乱写的一堆文字，了解一下就OK！ヾ(=･ω･=)o</view>
-        <view>
-          <view class='cu-tag bg-red light sm round'>假装有猫系列</view>
-          <view class='cu-tag bg-green light sm round'>戏精系列</view>
-        </view>
-      </view>
-    </view>
-  </view>
-</view>
 
 <!--底部导航栏-->
 <import src="../../template/nav" />
