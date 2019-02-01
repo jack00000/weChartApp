@@ -1,6 +1,7 @@
 
 <!--搜索栏 -->
 <!-- <van-search value="{{ value }}" placeholder="请输入搜索关键词" /> -->
+
 <view class="cu-bar margin-top bg-red search">
   <view class="cu-avatar round" style="background-image:url(https://image.weilanwl.com/img/square-1.jpg);"></view>
   <view class='search-form radius'>
@@ -12,6 +13,7 @@
     <text class="icon-triangledownfill"></text>
   </view>
 </view>
+
 <!--标签-->
 <!-- <view class='padding-sm flex flex-wrap'>
   <view class="padding-xs" wx:for="{{ColorList}}" wx:key>
