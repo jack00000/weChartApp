@@ -8,7 +8,7 @@ Page({
     navData: [
       {
         name: "index",  //文本
-        current: 1,    //是否是当前页，0不是  1是
+        current: 0,    //是否是当前页，0不是  1是
         style: 0,     //样式
         ico: 'icon-homefill',  //不同图标
         fn: 'gotoIndex'   //对应处理函数
@@ -20,7 +20,7 @@ Page({
         fn: 'gotoUpdating'
       }, {
         name: "publish",
-        current: 0,
+        current: 1,
         style: 1,
         ico: '',
         fn: 'gotopublish'

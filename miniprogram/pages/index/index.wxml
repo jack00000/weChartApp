@@ -35,7 +35,7 @@
 <swiper class="card-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500" bindchange="cardSwiper" indicator-color="#8799a3" indicator-active-color="#0081ff">
   <swiper-item wx:for="{{4}}" wx:key class="{{cardCur==index?'cur':''}}">
     <!-- <view class='bg-img shadow-blur' style="background-image:url(https://image.weilanwl.com/img/4x3-{{index+1}}.jpg)"></view> -->
-    <view class='bg-img shadow-blur' style="background-image:url(https://resouce155.oss-cn-beijing.aliyuncs.com/bracket/hand-3044387__480.jpg?Expires=1548774515&OSSAccessKeyId=TMP.AQG5aqHQ-NOkgeZekAEGiIwBqO3CdkCKLiEXSCRaop5NG4N5oYN3nRFk2NsJMC4CFQCeSJkRBSxVsxLjt-FPK0XUvIn0QAIVAJHrcMbuURcBNbKXJ4GUr1j_0Bbn&Signature=v0jZXbvxYIOAJ1CQyGKx0COST2o%3D)"></view>
+    <view class='bg-img shadow-blur' style="background-image:url(https://resouce155.oss-cn-beijing.aliyuncs.com/pshare/{{index+1}}.jpeg)"></view>
   </swiper-item>
 </swiper>
 

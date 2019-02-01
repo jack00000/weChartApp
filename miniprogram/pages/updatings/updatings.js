@@ -12,13 +12,13 @@ Page({
       {
         
         name: "index",  //文本
-        current: 1,    //是否是当前页，0不是  1是
+        current: 0,    //是否是当前页，0不是  1是
         style: 0,     //样式
         ico: 'icon-homefill',  //不同图标
         fn: 'gotoIndex'   //对应处理函数
       }, {
         name: "updating",
-        current: 0,
+        current: 1,
         style: 0,
         ico: 'icon-discover',
         fn: 'gotoUpdating'
