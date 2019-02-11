@@ -80,6 +80,7 @@ Page({
     console.log(e.detail.errMsg)
     console.log(e.detail.userInfo)
     console.log(e.detail.rawData)
+    app.globalData.userInfo = e.detail.userInfo,
     wx.redirectTo({
       url: '../index/index',
     });

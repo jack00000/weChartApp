@@ -1,11 +1,12 @@
 //index.js
-const app = getApp()
+const app = getApp();
 
 Page({
   data: {
     current: 'homepage',
     //ColorList: app.globalData.ColorList,
-    avatarUrl: './user-unlogin.png',
+    //这里犯啦一个错 avatarUrl: app.globalData.userInfo.avatarUrl X
+    avatarUrl: '',
     userInfo: {},
     logged: false,
     takeSession: false,
@@ -199,6 +200,9 @@ Page({
     console.log(event.detail);
   },
   onLoad: function (options) {
+    this.setData({
+      avatarUrl: app.globalData.userInfo.avatarUrl
+    })
     wx.request({
       url: 'http://127.0.0.1:8080/ssm/getCategory', // 仅为示例，并非真实的接口地址
       data: {
