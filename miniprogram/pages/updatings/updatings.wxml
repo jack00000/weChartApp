@@ -1,19 +1,14 @@
 <view class="cu-custom" style="height:{{CustomBar}}px;">
   <view class="cu-bar fixed gradual-pink" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
-      <text class='icon-back'></text> 卡片
+      <text class='icon-back'></text> Updatings
     </navigator>
   </view>
 </view>
 
 
-<view class="cu-bar solid-bottom {{isCard?'margin-top':''}}">
-  <view class='action'>
-    <text class='icon-titles text-orange '></text> 动态类卡片
-  </view>
-  <view class='action'>
-    <switch class='sm' checked='{{isCard}}' bindchange='isCard'></switch>
-  </view>
+<view class="margin-top">
+ 
 </view>
 <view class="cu-card dynamic {{isCard?'no-card':''}}">
   <view wx:for="1" wx:key class="cu-item shadow">

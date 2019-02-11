@@ -145,22 +145,22 @@ Page({
       icon: 'cardboardfill',
       color: 'red',
       badge: 120,
-      name: 'VR'
+      name: 'My Posts'
     }, {
       icon: 'recordfill',
       color: 'orange',
       badge: 1,
-      name: '录像'
+      name: 'admire'
     }, {
       icon: 'picfill',
       color: 'yellow',
       badge: 0,
-      name: '图像'
+      name: 'be admired'
     }, {
       icon: 'noticefill',
       color: 'olive',
       badge: 22,
-      name: '通知'
+      name: 'my wallet'
     }, {
       icon: 'upstagefill',
       color: 'cyan',
@@ -358,6 +358,10 @@ Page({
         wx.stopPullDownRefresh();
       }
     })
+  },
+  topSearch:function(e){
+      debugger
+      //从后台查询文章数据用于显示 包含1.简介数据 2. 具体内容数据
   }
 
   

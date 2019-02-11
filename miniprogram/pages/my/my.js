@@ -41,42 +41,42 @@ Page({
       icon: 'cardboardfill',
       color: 'red',
       badge: 120,
-      name: 'VR'
+      name: 'My Posts'
     }, {
-      icon: 'recordfill',
-      color: 'orange',
-      badge: 1,
-      name: '录像'
-    }, {
-      icon: 'picfill',
-      color: 'yellow',
-      badge: 0,
-      name: '图像'
-    }, {
-      icon: 'noticefill',
-      color: 'olive',
-      badge: 22,
-      name: '通知'
-    }, {
+        icon: 'recordfill',
+        color: 'orange',
+        badge: 1,
+        name: 'Admire'
+      }, {
+        icon: 'picfill',
+        color: 'yellow',
+        badge: 0,
+        name: 'Be Admired'
+      }, {
+        icon: 'noticefill',
+        color: 'olive',
+        badge: 22,
+        name: 'My Wallet'
+      }, {
       icon: 'upstagefill',
       color: 'cyan',
       badge: 0,
-      name: '排行榜'
+      name: 'Favourites'
     }, {
       icon: 'clothesfill',
       color: 'blue',
       badge: 0,
-      name: '皮肤'
+      name: 'Popular'
     }, {
       icon: 'discoverfill',
       color: 'purple',
       badge: 0,
-      name: '发现'
+      name: 'Recend'
     }, {
       icon: 'questionfill',
       color: 'mauve',
       badge: 0,
-      name: '帮助'
+      name: 'help'
     }, {
       icon: 'commandfill',
       color: 'purple',
