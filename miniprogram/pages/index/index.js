@@ -215,6 +215,7 @@ Page({
     })
   },
   getCategory:function(){
+    debugger
     wx.request({
       url: 'http://localhost:8080/ssm/admin', // 仅为示例，并非真实的接口地址
       data: {

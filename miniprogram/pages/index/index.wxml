@@ -3,7 +3,7 @@
 <!-- <van-search value="{{ value }}" placeholder="请输入搜索关键词" /> -->
 
 <view class="cu-bar margin-top bg-red search">
-  <view class="cu-avatar round" style="background-image:url(https://image.weilanwl.com/img/square-1.jpg);"></view>
+  <view class="cu-avatar round" style="background-image:url({{avatarUrl}});"></view>
   <view class='search-form radius'>
     <text class="icon-search"></text>
     <input type="text" placeholder="搜索图片、文章、视频" confirm-type="search"></input>

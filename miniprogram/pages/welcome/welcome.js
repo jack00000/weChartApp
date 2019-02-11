@@ -1,4 +1,5 @@
 
+var app = getApp()
 Page({
 
   /**
@@ -33,11 +34,13 @@ Page({
             success: function (res) {
               debugger
               var userInfo = res.userInfo
+              app.globalData.userInfo = userInfo
               var nickName = userInfo.nickName
               var avatarUrl = userInfo.avatarUrl
               that.setData({
                 nickName: nickName,
-                avatarUrl: avatarUrl
+                avatarUrl: avatarUrl,
+                
               });
             }
           })
@@ -48,11 +51,11 @@ Page({
     });
   }
   ,
-  onTap: function () {
-    wx.redirectTo({
-      url: '../index/index',
-    });
-  },
+  // onTap: function () {
+  //   wx.redirectTo({
+  //     url: '../index/index',
+  //   });
+  // },
   onshow:function(){
     var that = this;
     wx.request({
@@ -72,5 +75,13 @@ Page({
         });
       }
     });
-  }
+  },
+  onGotUserInfo: function (e) {
+    console.log(e.detail.errMsg)
+    console.log(e.detail.userInfo)
+    console.log(e.detail.rawData)
+    wx.redirectTo({
+      url: '../index/index',
+    });
+  },
 })

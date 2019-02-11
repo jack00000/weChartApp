@@ -2,8 +2,8 @@
 <view class="container">
   <image src="{{url}}" class="bg-img" mode="aspectFill"></image>
   <image src="{{avatarUrl}}" class="user-avatar" ></image>
-  <text class="user-name">hello,{{nickName}}</text>
-  <button class="moto" bindtap="onTap">
+  <text class="user-name">  Welcome to Pshare {{nickName}}</text>
+  <button class="moto" bindtap="onTap" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">
     Enter Pshare
   </button>
   <text class="copyright">{{copyright}}</text>
