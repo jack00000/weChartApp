@@ -1,0 +1,82 @@
+
+<!--搜索栏 -->
+<!-- <van-search value="{{ value }}" placeholder="请输入搜索关键词" /> -->
+
+<view class="cu-bar margin-top bg-red search">
+  <view class="cu-avatar round" style="background-image:url(https://image.weilanwl.com/img/square-1.jpg);"></view>
+  <view class='search-form radius'>
+    <text class="icon-search"></text>
+    <input type="text" placeholder="搜索图片、文章、视频" confirm-type="search"></input>
+  </view>
+  <view class='action'>
+    <text>广州</text>
+    <text class="icon-triangledownfill"></text>
+  </view>
+</view>
+
+<!--标签-->
+<!-- <view class='padding-sm flex flex-wrap'>
+  <view class="padding-xs" wx:for="{{ColorList}}" wx:key>
+    <view class='cu-tag bg-{{item.name}}'>{{item.title}}</view>
+  </view>
+ 
+</view>
+<scroll-view scroll-x class="bg-white nav" scroll-with-animation scroll-left="{{scrollLeft}}">
+  <view class="cu-item {{index==TabCur?'text-green cur':''}}" wx:for="{{10}}" wx:key bindtap='tabSelect' data-id="{{index}}">
+    Tab{{index}}
+  </view>
+</scroll-view> -->
+
+<scroll-view scroll-x class="bg-white nav" scroll-with-animation scroll-left="{{scrollLeft}}">
+  <view class="cu-item {{index==TabCur?'text-green cur':''}}" wx:for="{{ColorList}}" wx:key bindtap='tabSelect' data-id="{{index}}">
+    <view class='cu-tag bg-{{item.name}}'>{{item.title}}</view>
+  </view>
+</scroll-view>
+
+<!--轮播图-->
+<swiper class="card-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500" bindchange="cardSwiper" indicator-color="#8799a3" indicator-active-color="#0081ff">
+  <swiper-item wx:for="{{4}}" wx:key class="{{cardCur==index?'cur':''}}">
+    <!-- <view class='bg-img shadow-blur' style="background-image:url(https://image.weilanwl.com/img/4x3-{{index+1}}.jpg)"></view> -->
+    <view class='bg-img shadow-blur' style="background-image:url(https://resouce155.oss-cn-beijing.aliyuncs.com/pshare/{{index+1}}.jpeg)"></view>
+  </swiper-item>
+</swiper>
+
+
+<view class="cu-card article {{isCard?'no-card':''}}">
+  <view wx:for="1" wx:key class="cu-item shadow">
+    <view class="title">这里有个戏精铲屎官，主子了解一下？</view>
+    <view class="content">
+      <image src="https://image.weilanwl.com/img/4x3-3.jpg" mode="aspectFill"></image>
+      <view class="desc">
+        <view class='text-content'> 这是一个伪铲屎官为了给自己的程序凑字数瞎几把乱写的一堆文字，了解一下就OK！ヾ(=･ω･=)o</view>
+        <view>
+          <view class='cu-tag bg-red light sm round'>假装有猫系列</view>
+          <view class='cu-tag bg-green light sm round'>戏精系列</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="cu-card article {{isCard?'no-card':''}}">
+  <view wx:for="1" wx:key class="cu-item shadow">
+    <view class="title">这里有个戏精铲屎官，主子了解一下？</view>
+    <view class="content">
+      <image src="https://image.weilanwl.com/img/4x3-3.jpg" mode="aspectFill"></image>
+      <view class="desc">
+        <view class='text-content'> 这是一个伪铲屎官为了给自己的程序凑字数瞎几把乱写的一堆文字，了解一下就OK！ヾ(=･ω･=)o</view>
+        <view>
+          <view class='cu-tag bg-red light sm round'>假装有猫系列</view>
+          <view class='cu-tag bg-green light sm round'>戏精系列</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!--底部导航栏-->
+<import src="../../template/nav" />
+  <view class="flex fix_nav_wp">
+  <block wx:for="{{navData}}">
+      <template is="nav" data="{{...item}}"/>
+  </block>
+  </view> 
