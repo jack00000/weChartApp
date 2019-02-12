@@ -1,16 +1,15 @@
 {
   "pages": [
-        "pages/index/index",
-    "pages/index/post/post",
-    "pages/my/my",
-    "pages/welcome/welcome",
-
-    "pages/new/new",
-    "pages/updatings/updatings",
-    "pages/news/news",
-    "pages/news/chat/chat",
-    "pages/index/post/post-detail/post-detail",
-    "pages/index/post/post-item/post-item"
+      "pages/welcome/welcome",
+      "pages/index/index",
+      "pages/index/post/post",
+      "pages/my/my",
+      "pages/new/new",
+      "pages/updatings/updatings",
+      "pages/news/news",
+      "pages/news/chat/chat",
+      "pages/index/post/post-detail/post-detail",
+      "pages/index/post/post-item/post-item"
 
    
   ],

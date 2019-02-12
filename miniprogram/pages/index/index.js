@@ -5,7 +5,7 @@ Page({
   data: {
     current: 'homepage',
     //ColorList: app.globalData.ColorList,
-    //这里犯啦一个错 avatarUrl: app.globalData.userInfo.avatarUrl X
+    //这里犯啦一个错 avatarUrl: app.globalData.userInfo.avatarUrl X 目前app没有这个值
     avatarUrl: '',
     userInfo: {},
     logged: false,
@@ -214,7 +214,8 @@ Page({
         that.setData({
           swiperData: swiperData,
           feedsData: feedsData,
-          lastkey: lastkey
+          lastkey: lastkey,
+          avatarUrl: app.globalData.userInfo.avatarUrl
         });
       }
     });
