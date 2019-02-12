@@ -1,0 +1,12 @@
+
+<template name="post-item">
+  <view class="post-container">
+    <view class="post-author-date">
+      <image src="{{avatar}}" class="post-author"></image>
+      <text class="post-date">{{date}}</text>
+    </view>
+    <text class="post-title">{{title}}</text>
+    <image class="post-image" src="{{imgsrc}}"></image>
+    <text class="post-content">{{content}}</text>
+  </view>
+</template>

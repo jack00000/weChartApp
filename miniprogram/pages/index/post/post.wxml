@@ -1,0 +1,15 @@
+<import src="post-item/post-item-template.wxml" />
+<import src="post-item/post-view-template.wxml" />
+<view>
+ 
+
+  <view class="today-container">
+    <block wx:for="{{feedsData}}" wx:for-item="feeds">
+      <view class="today-content" catchtap="onPostTap" data-postid="{{feeds.post.id}}">
+        <text class="today-title">{{feeds.post.title}}</text>
+        <image src="{{feeds.image}}" mode="aspectFill" class="today-img"></image>
+      </view>
+    </block>
+  </view>
+
+</view>

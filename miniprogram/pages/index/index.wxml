@@ -56,10 +56,10 @@
   </view>
 </view>
 <view class="cu-card article {{isCard?'no-card':''}}">
-  <view wx:for="1" wx:key class="cu-item shadow">
-    <view class="title">这里有个戏精铲屎官，主子了解一下？</view>
+  <view wx:for="{{feedsData}}" wx:for-item="feeds" wx:key class="cu-item shadow"  catchtap="onPostTap" data-postid="{{feeds.post.id}}">
+    <view class="title">{{feeds.post.title}}</view>
     <view class="content">
-      <image src="https://image.weilanwl.com/img/4x3-3.jpg" mode="aspectFill"></image>
+      <image src="{{feeds.image}}" mode="aspectFill"></image>
       <view class="desc">
         <view class='text-content'> 这是一个伪铲屎官为了给自己的程序凑字数瞎几把乱写的一堆文字，了解一下就OK！ヾ(=･ω･=)o</view>
         <view>
@@ -70,6 +70,15 @@
     </view>
   </view>
 </view>
+
+<!-- <view class="today-container">
+    <block wx:for="{{feedsData}}" wx:for-item="feeds">
+      <view class="today-content" catchtap="onPostTap" data-postid="{{feeds.post.id}}">
+        <text class="today-title">{{feeds.post.title}}</text>
+        <image src="{{feeds.image}}" mode="aspectFill" class="today-img"></image>
+      </view>
+    </block>
+</view> -->
 
 <!--底部导航栏-->
 <import src="../../template/nav" />

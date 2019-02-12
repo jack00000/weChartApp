@@ -1,0 +1,60 @@
+@import "post-item/post-item-template.wxss";
+@import "post-item/post-view-template.wxss";
+@import "/wxParse/wxParse.wxss";
+
+swiper, image {
+  width: 100%;
+  height: 600rpx;
+}
+
+swiper {
+  margin-bottom: 10rpx;
+}
+
+.post-item {
+  background: #fff;
+}
+
+.swiper-title {
+  color: #fff;
+  font-size: 18px;
+  position: absolute;
+  top: 430rpx;
+  left: 40rpx;
+  right: 30rpx;
+}
+
+.today-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.today-font {
+  font-size: 28rpx;
+  color: #999;
+  margin-left: 40rpx;
+  margin-bottom: 30rpx;
+}
+
+.today-content {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  margin: 0 auto 10rpx;
+  width: 100%;
+}
+
+.today-img {
+  width: 400rpx;
+  height: 220rpx;
+}
+
+.today-title {
+  line-height: 1.5;
+  font-weight: bold;
+  width: 480rpx;
+  margin: 30rpx 35rpx 20rpx;
+  letter-spacing: 2rpx;
+  max-height: 170rpx;
+  overflow: hidden;
+}

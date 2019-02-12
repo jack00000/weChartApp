@@ -1,0 +1,142 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 30rpx;
+}
+
+.wxParse-p {
+  color: #333;
+  font-size: 34rpx;
+  margin-bottom: 35rpx;
+  line-height: 1.5;
+}
+
+.header-image {
+  width: 100%;
+  height: 460rpx;
+}
+
+.audio {
+  width: 102rpx;
+  height: 110rpx;
+  position: absolute;
+  left: 50%;
+  margin-left: -51rpx;
+  top: 180rpx;
+  opacity: 0.6;
+}
+
+.author-data {
+  flex-direction: row;
+  margin: 20rpx 0rpx 0rpx;
+}
+
+.author-image {
+  height: 64rpx;
+  width: 64rpx;
+  vertical-align: middle;
+  border-radius: 50%;
+  margin-left: 20rpx;
+}
+
+.author {
+  font-size: 30rpx;
+  font-weight: 300;
+  margin-left: 20rpx;
+  vertical-align: middle;
+  color: #666;
+}
+
+.const-text {
+  font-size: 24rpx;
+  color: #999;
+  margin: 0 20rpx 0 20rpx;
+  vertical-align: middle;
+}
+
+.date {
+  font-size: 28rpx;
+  color: #666;
+  vertical-align: middle;
+}
+
+.title {
+  margin: 30rpx 0 0;
+  font-size: 42rpx;
+  color: #222;
+  letter-spacing: 6rpx;
+  font-weight: bold;
+}
+
+.tool {
+  margin-top: 20rpx;
+  position: relative;
+  z-index: 2;
+}
+
+.tool-line {
+  position: absolute;
+  top: 40%;
+  width: 580rpx;
+  height: 1px;
+  background-color: #eee;
+  z-index: -1;
+}
+
+.circle-image {
+  float: right;
+  margin-right: 40rpx;
+  vertical-align: middle;
+  margin-bottom: 10rpx;
+}
+
+.circle-image image {
+  width: 90rpx;
+  height: 90rpx;
+}
+
+.share-image {
+  margin-left: 30rpx;
+}
+
+.horizon {
+  width: 660rpx;
+  height: 1px;
+  background-color: #e5e5e5;
+  vertical-align: middle;
+  position: relative;
+  top: 46rpx;
+  margin: 0 auto;
+  z-index: -99;
+}
+
+.detail {
+  color: #666;
+  margin: 20rpx 30rpx 0 30rpx;
+  line-height: 44rpx;
+  letter-spacing: 2px;
+  text-indent: 2em;
+}
+
+.comments-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-container image {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  margin-right: 30rpx;
+  vertical-align: middle;
+}
+
+.comment-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 30rpx;
+  border-bottom: 1px solid #eee;
+  height:150rpx;
+}

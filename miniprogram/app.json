@@ -1,14 +1,18 @@
 {
   "pages": [
-      "pages/my/my",
+        "pages/index/index",
+    "pages/index/post/post",
+    "pages/my/my",
     "pages/welcome/welcome",
-    "pages/index/index",
+
     "pages/new/new",
     "pages/updatings/updatings",
     "pages/news/news",
- 
     "pages/news/chat/chat",
-    "pages/index/content/content"
+    "pages/index/post/post-detail/post-detail",
+    "pages/index/post/post-item/post-item"
+
+   
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
