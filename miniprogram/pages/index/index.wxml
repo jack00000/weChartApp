@@ -40,10 +40,9 @@
 </swiper> --> 
 
 
-
 <view class="cu-card article {{isCard?'no-card':''}}">
   <view wx:for="{{feedsData}}" wx:for-item="feeds" wx:key class="cu-item shadow"  catchtap="onPostTap" data-postid="{{feeds.post.id}}">
-    <view class="title">{{feeds.post.title}}</view>
+    <view class="title">{{feeds.post.description}}</view>
     <view class="content">
       <image src="{{feeds.image}}" mode="aspectFill"></image>
       <view class="desc">

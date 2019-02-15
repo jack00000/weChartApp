@@ -1,3 +1,5 @@
+<!-- my的子界面 都是做一个查询  显示有异 -->
+
 <view class="cu-custom" style="height:{{CustomBar}}px;">
   <view class="cu-bar fixed gradual-pink" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">

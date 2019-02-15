@@ -1,6 +1,6 @@
 <import src="../../../wxParse/wxParse.wxml" />
 <view class="container">
-  <image class="header-image" src="{{coverImg}}" mode="aspectFill"></image>
+  <image class="header-image " src="{{coverImg}}" mode="aspectFill"></image>
   <view class="author-data">
     <image class="author-image" src="{{author.avatar}}"></image>
     <text class="author">{{author.name}}</text>
