@@ -223,10 +223,11 @@ Page({
     wx.request({
       url: 'http://localhost:8888/ssm/getIndexData',
       success: function (res) {
-        var data = res.data.respond;
+        var indexData = res.data.respond.datas;
+
         that.setData({
           //爲什麽不行
-         indexData:data 
+          indexData : indexData 
         });
       }
     })

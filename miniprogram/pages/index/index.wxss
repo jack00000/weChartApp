@@ -9,6 +9,32 @@ page {
   flex-direction: column;
   justify-content: flex-start;
 }
+.scroll-x{
+    height:80px;
+    white-space:nowrap;
+    display:flex;
+}
+/* 隐藏scrollbar */
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+    color: transparent;
+}
+.view-parent{
+    display:inline-block;
+}
+.view-item{
+    width:50px;
+    height:50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:12px;
+    font-color:#222;
+    background:#80CBC4;
+    margin:10px;
+}
+
 
 .userinfo, .uploader, .tunnel {
   margin-top: 40rpx;

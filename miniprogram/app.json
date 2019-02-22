@@ -1,12 +1,12 @@
 {
   "pages": [
-          "pages/updatings/updatings",
+          
         "pages/welcome/welcome",
         "pages/my/my",
         "pages/index/index",
         "pages/index/post/post",
         "pages/new/new",
-      
+      "pages/updatings/updatings",
         "pages/news/news",
         "pages/news/chat/chat",
         "pages/index/post/post-detail/post-detail",
