@@ -8,8 +8,9 @@
 
 
 <view class="margin-top">
- 
 </view>
+
+<view wx:for="{{4}}" wx:for-item="feeds" wx:key class="cu-item shadow"  catchtap="onPostTap" data-postid="{{feeds.post.id}}">
 <view class="cu-card dynamic {{isCard?'no-card':''}}">
   <view wx:for="1" wx:key class="cu-item shadow">
     <view class="cu-list menu menu-avatar">
@@ -60,6 +61,7 @@
       </view>
     </view>
   </view>
+</view>
 </view>
 
 

@@ -238,6 +238,11 @@ Page({
         wx.stopPullDownRefresh();
       }
     })
+  },
+  toMyGithubView:function(){
+    wx.redirectTo({
+      url: './list/myGithub/myGithub',
+    })
   }
   
 })

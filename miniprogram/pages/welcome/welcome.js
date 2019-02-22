@@ -32,7 +32,7 @@ Page({
         if (res.code) {
           wx.getUserInfo({
             success: function (res) {
-              debugger
+              
               var userInfo = res.userInfo
               app.globalData.userInfo = userInfo
               var nickName = userInfo.nickName
@@ -80,7 +80,7 @@ Page({
     console.log(e.detail.errMsg)
     console.log(e.detail.userInfo)
     console.log(e.detail.rawData)
-    debugger
+    
     app.globalData.userInfo = e.detail.userInfo,
     wx.redirectTo({
       url: '../index/index',

@@ -10,7 +10,7 @@
  
 </view>
 <view class="cu-list menu menu-avatar" bindtap='tochatview'>
-  <view class="cu-item {{modalName=='move-box-'+ index?'move-cur':''}}" wx:for="{{4}}" wx:key bindtouchstart='ListTouchStart' bindtouchmove='ListTouchMove' bindtouchend='ListTouchEnd' data-target="move-box-{{index}}">
+  <view class="cu-item {{modalName=='move-box-'+ index?'move-cur':''}}" wx:for="{{10}}" wx:key bindtouchstart='ListTouchStart' bindtouchmove='ListTouchMove' bindtouchend='ListTouchEnd' data-target="move-box-{{index}}">
     <view class="cu-avatar round lg" style="background-image:url(https://image.weilanwl.com/img/square-{{index+1}}.jpg);"></view>
     <view class='content'>
       <view class='text-grey'>文晓港</view>

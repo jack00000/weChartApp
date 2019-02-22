@@ -8,6 +8,7 @@ Page({
     //这里犯啦一个错 avatarUrl: app.globalData.userInfo.avatarUrl X 目前app没有这个值
     avatarUrl: '',
     userInfo: {},
+    indexData:null,
     logged: false,
     takeSession: false,
     requestResult: '',
@@ -219,6 +220,16 @@ Page({
         });
       }
     });
+    wx.request({
+      url: 'http://localhost:8888/ssm/getIndexData',
+      success: function (res) {
+        var data = res.data.respond;
+        that.setData({
+          //爲什麽不行
+         indexData:data 
+        });
+      }
+    })
   },
   onPostTap: function (evt) {
     var postid = evt.currentTarget.dataset.postid;
@@ -392,7 +403,9 @@ Page({
       url: 'http://127.0.0.1:8080/ssm/getCategory',
       data: {},
       method: 'GET',
-      success: function (res) { },
+      success: function (res) { 
+        
+      },
       fail: function (res) { },
       complete: function (res) {
         wx.stopPullDownRefresh();

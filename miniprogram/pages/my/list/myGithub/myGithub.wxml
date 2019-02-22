@@ -1,2 +1,2 @@
 <!--miniprogram/pages/my/list/myGithub/myGithub.wxml-->
-<text>miniprogram/pages/my/list/myGithub/myGithub.wxml</text>
+<web-view src="https://github.com" />

@@ -75,7 +75,7 @@
       <text class='text-grey'>My Collection</text>
     </navigator>
   </view>
-    <view class="cu-item {{menuArrow?'arrow':''}}">
+    <view class="cu-item {{menuArrow?'arrow':''}}" bindtap='toMyGithubView'>
     <navigator class='content' hover-class='none' url='../list/list' open-type="redirect">
       <text class='icon-discoverfill text-orange'></text>
       <text class='text-grey'>My Github</text>
