@@ -1,83 +1,79 @@
 <view class="cu-custom" style="height:{{CustomBar}}px;">
   <view class="cu-bar fixed gradual-pink" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
-      <text class='icon-back'></text>
-      聊天
+      <text class='icon-back'></text> 聊天
     </navigator>
   </view>
 </view>
 
 <view class="cu-chat">
+ <view class='cu-info round'>买家已付款,赏金暂存第三方平台,买家确认结题后,卖家收到货款.</view>
   <view class="cu-item self">
     <view class="main">
       <view class='content bg-green shadow-blur'>
-        <text>喵喵喵！喵喵喵！喵喵喵！喵喵！喵喵！！喵！喵喵喵！</text>
+        <text>你好，請問有什麽問題？</text>
       </view>
     </view>
     <view class="cu-avatar radius" style="background-image:url(https://image.weilanwl.com/img/square-3.jpg);"></view>
     <view class='date'>2018年3月23日 13:23</view>
   </view>
-  <view class='cu-info round'>对方撤回一条消息!</view>
   <view class="cu-item">
     <view class="cu-avatar radius" style="background-image:url(https://image.weilanwl.com/img/square-2.jpg);"></view>
     <view class="main">
       <view class='content shadow'>
-        <text>喵喵喵！喵喵喵！</text>
+        <text>如何搭建hexo博客？</text>
       </view>
     </view>
     <view class='date '> 13:23</view>
   </view>
-  <view class="cu-info">
-    <text class='icon-roundclosefill text-red '></text> 对方拒绝了你的消息
-  </view>
-  <view  class="cu-info">
-    对方开启了好友验证，你还不是他(她)的好友。请先发送好友验证请求，对方验证通过后，才能聊天。
-    <text class='text-blue'>发送好友验证</text>
-  </view>
+
   <view class="cu-item self">
     <view class="main">
-      <image src="https://image.weilanwl.com/img/3x4-1.jpg" class='radius' mode="widthFix"></image>
-    </view>
-    <view class="cu-avatar radius" style="background-image:url(https://image.weilanwl.com/img/square-3.jpg);"></view>
-    <view class='date'> 13:23</view>
-  </view>
-  <view class="cu-item self">
-    <view class="main">
-      <view class='action text-bold text-grey'>
-        3"
-      </view>
-      <view class='content shadow'>
-        <text class='icon-sound text-xxl padding-right-xl'> </text>
+      <view class='content bg-green shadow-blur'>
+        <text>官網有具體教程</text>
       </view>
     </view>
     <view class="cu-avatar radius" style="background-image:url(https://image.weilanwl.com/img/square-3.jpg);"></view>
-    <view class='date'>13:23</view>
+    <view class='date'>2018年3月23日 13:23</view>
   </view>
-  <view class="cu-item self">
-    <view class="main">
-      <view class='action'>
-        <text class='icon-locationfill text-orange text-xxl'></text>
-      </view>
-      <view class='content shadow'>
-        喵星球，喵喵市
-      </view>
-    </view>
-    <view class="cu-avatar radius" style="background-image:url(https://image.weilanwl.com/img/square-3.jpg);"></view>
-    <view class='date'>13:23</view>
-  </view>
+
+
   <view class="cu-item">
     <view class="cu-avatar radius" style="background-image:url(https://image.weilanwl.com/img/square-2.jpg);"></view>
     <view class="main">
       <view class='content shadow'>
-       @#$^&**
-      </view>      
-      <view class='action text-grey'>
-        <text class='icon-warnfill text-red text-xxl'></text> <text class='text-sm margin-left-sm'>翻译错误</text> 
+        <text>看不懂</text>
       </view>
     </view>
-    <view class='date'>13:23</view>
+    <view class='date '> 13:23</view>
   </view>
+
+  <view class="cu-item self">
+    <view class="main">
+      <view class='content bg-green shadow-blur'>
+        <text>npm install hexo-cli -g
+              hexo init blog
+              cd blog
+              npm install
+              hexo server</text>
+      </view>
+    </view>
+    <view class="cu-avatar radius" style="background-image:url(https://image.weilanwl.com/img/square-3.jpg);"></view>
+    <view class='date'>2018年3月23日 13:23</view>
+  </view>
+   <view class="cu-item">
+    <view class="cu-avatar radius" style="background-image:url(https://image.weilanwl.com/img/square-2.jpg);"></view>
+    <view class="main">
+      <view class='content shadow'>
+        <text>已解决 多谢</text>
+      </view>
+    </view>
+    <view class='date '> 13:23</view>
+  </view>
+   <view class='cu-info round'>买家确认结题.货款自动转入卖家账户.</view>
 </view>
+
+
 
 <view class="cu-bar foot input">
   <view class='action'>
