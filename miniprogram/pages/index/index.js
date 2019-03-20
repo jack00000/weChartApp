@@ -272,7 +272,7 @@ Page({
     wx.request({
       url: 'https://app3.qdaily.com/wxapp/homes/index/0.json',
       success: function (res) {
-        var data = res.data.response;
+        var data = res.data.response;debugger;
         var swiperData = data.banners;
         var feedsData = data.feeds;
         var lastkey = data.last_key;

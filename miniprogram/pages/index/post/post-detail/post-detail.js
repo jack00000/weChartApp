@@ -42,9 +42,9 @@ Page({
     //   }
     // });
     wx.request({
-      url: 'http://localhost:8888/ssm/index/getIndexPaperDetailData&pid=1',
+      url: 'http://localhost:8888/ssm/index/getIndexPaperDetailData?pid=10',
       success: (res) => {
-        var content=res.data;
+        var content=res.data.respond.datas.content;
         WxParse.wxParse('article', 'html', content, that, 5);
       
       },

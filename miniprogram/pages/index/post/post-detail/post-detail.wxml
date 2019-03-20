@@ -1,12 +1,5 @@
 <import src="../../../wxParse/wxParse.wxml" />
 <view class="container">
-  <image class="header-image " src="{{coverImg}}" mode="aspectFill"></image>
-  <view class="author-data">
-    <image class="author-image" src="{{author.avatar}}"></image>
-    <text class="author">{{author.name}}</text>
-  </view>
-  <text class="title">{{detail.title}}</text>
-
   <template is="wxParse" data="{{wxParseData:article.nodes}}"></template>
   <view class="WxComment">
   <WxComment tipOne="Markdown " tipTwo="will be supported, Powered by yicm." submitBtnText="回复" articleID="{{article_id}}" contentLen='1'></WxComment>
