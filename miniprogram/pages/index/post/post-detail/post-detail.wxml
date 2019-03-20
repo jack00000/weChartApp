@@ -6,15 +6,7 @@
     <text class="author">{{author.name}}</text>
   </view>
   <text class="title">{{detail.title}}</text>
-  <view class="tool">
 
-    <view class="circle-image">
-      <image wx:if="{{collectionStatus}}" catchtap="onCollectionTap" src="/img/icon/collection.png"></image>
-      <image wx:else catchtap="onCollectionTap" src="/img/icon/collection-anti.png"></image>
-      <image catchtap="onShareTap" class="share-image" src="/img/icon/share.png"></image>
-    </view>
-    <view class="tool-line"></view>
-  </view>
   <template is="wxParse" data="{{wxParseData:article.nodes}}"></template>
   <view class="WxComment">
   <WxComment tipOne="Markdown " tipTwo="will be supported, Powered by yicm." submitBtnText="回复" articleID="{{article_id}}" contentLen='1'></WxComment>

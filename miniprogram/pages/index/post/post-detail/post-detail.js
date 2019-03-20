@@ -44,20 +44,9 @@ Page({
     wx.request({
       url: 'http://localhost:8888/ssm/index/getIndexPaperDetailData&pid=1',
       success: (res) => {
-        var response = res.data.response;
-        var author = response.author;
-        var coverImg = response.image;
-        var detail = response.post;
-        var article = detail.content;
-        WxParse.wxParse('article', 'html', article, that, 5);
-        that.setData({
-          detail: detail
-        });
-        that.setData({
-          coverImg: coverImg,
-          author: author,
-          detail: detail
-        });
+        var content=res.data;
+        WxParse.wxParse('article', 'html', content, that, 5);
+      
       },
     })
 
