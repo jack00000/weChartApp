@@ -8,14 +8,15 @@ Page({
    * 页面的初始数据
    */
   data: {
-    currentPostId: ''
+    currentPostId: '',
+    article_id:null
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var that = this;
+    var that = this;debugger
     // 获取文章详情内容
     var postid = options.id;
     this.setData({
@@ -53,7 +54,8 @@ Page({
 
     // 设置文章id为页面共享
     this.setData({
-      currentPostId: postid
+      currentPostId: postid,
+      article_id: postid
     });
     // 获取缓存
     var collectionList = wx.getStorageSync('collectionList');

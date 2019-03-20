@@ -19,7 +19,7 @@
 </scroll-view>
 
 <view class="cu-card article {{isCard?'no-card':''}}">
-  <view wx:for="{{indexData}}" wx:for-item="data" wx:key class="cu-item shadow"  catchtap="onPostTap" data-postid="{{indexData.paperId}}">
+  <view wx:for="{{indexData}}" wx:for-item="data" wx:key class="cu-item shadow"  catchtap="onPostTap" data-postid="{{data.paperId}}">
     <view class="title">{{data.title}}</view>
     <view class="content">
       <image src="https://www.bing.com/az/hprichbg/rb/RavenWolf_ZH-CN4544068603_1080x1920.jpg" mode="aspectFill"></image>

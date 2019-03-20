@@ -223,7 +223,7 @@ Page({
     wx.request({
       url: 'http://localhost:8888/ssm/index/getIndexData',
       success: function (res) {
-        var indexData = res.data.respond.datas;
+        var indexData = res.data.respond.datas;debugger
 
         that.setData({
           //爲什麽不行
@@ -233,7 +233,7 @@ Page({
     })
   },
   onPostTap: function (evt) {
-    var postid = evt.currentTarget.dataset.postid;
+    var postid = evt.currentTarget.dataset.postid;debugger
     wx.navigateTo({
       url: 'post/post-detail/post-detail?id=' + postid
     });
