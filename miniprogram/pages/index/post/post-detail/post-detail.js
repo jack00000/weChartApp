@@ -22,8 +22,27 @@ Page({
       postid: postid
     });
     // 
+    // wx.request({
+    //   url: 'https://app3.qdaily.com/wxapp/articles/info/' + postid + '.json',
+    //   success: (res) => {
+    //     var response = res.data.response;
+    //     var author = response.author;
+    //     var coverImg = response.image;
+    //     var detail = response.post;
+    //     var article = detail.content;
+    //     WxParse.wxParse('article', 'html', article, that, 5);
+    //     that.setData({
+    //       detail: detail
+    //     });
+    //     that.setData({
+    //       coverImg: coverImg,
+    //       author: author,
+    //       detail: detail
+    //     });
+    //   }
+    // });
     wx.request({
-      url: 'https://app3.qdaily.com/wxapp/articles/info/' + postid + '.json',
+      url: 'http://localhost:8888/ssm/index/getIndexPaperDetailData&pid=1',
       success: (res) => {
         var response = res.data.response;
         var author = response.author;
@@ -39,8 +58,8 @@ Page({
           author: author,
           detail: detail
         });
-      }
-    });
+      },
+    })
 
 
     // 设置文章id为页面共享

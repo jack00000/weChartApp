@@ -221,7 +221,7 @@ Page({
       }
     });
     wx.request({
-      url: 'http://localhost:8888/ssm/getIndexData',
+      url: 'http://localhost:8888/ssm/index/getIndexData',
       success: function (res) {
         var indexData = res.data.respond.datas;
 

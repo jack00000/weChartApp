@@ -1,4 +1,7 @@
 {
   "navigationBarBackgroundColor": "#355A83",
-  "navigationBarTitleText": "文章详情"
+  "navigationBarTitleText": "文章详情",
+  "usingComponents": {
+    "WxComment": "../../../../WxComment/component/WxComment/WxComment"
+  }
 }

@@ -16,12 +16,7 @@
     <view class="tool-line"></view>
   </view>
   <template is="wxParse" data="{{wxParseData:article.nodes}}"></template>
-  <view class="comments-container">
-    <block wx:for="{{comments}}" wx:for-item="comment">
-      <view class="comment-container">
-        <image src="{{comment.author.avatar}}"></image>
-        <text>{{comment.content}}</text>
-      </view>
-    </block>
-  </view>
+  <view class="WxComment">
+  <WxComment tipOne="Markdown " tipTwo="will be supported, Powered by yicm." submitBtnText="回复" articleID="{{article_id}}" contentLen='1'></WxComment>
+</view>
 </view>
