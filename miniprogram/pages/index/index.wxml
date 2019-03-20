@@ -12,6 +12,11 @@
     <text bindtap='topSearch'>search</text>
   </view>
 </view>
+<scroll-view scroll-x class="bg-white nav" scroll-with-animation scroll-left="{{scrollLeft}}">
+  <view class="cu-item {{index==TabCur?'text-green cur':''}}" wx:for="{{ColorList}}" wx:key bindtap='tabSelect' data-id="{{index}}">
+    <view class='cu-tag bg-{{item.name}}'>{{item.title}}</view>
+  </view>
+</scroll-view>
 
 <view class="cu-card article {{isCard?'no-card':''}}">
   <view wx:for="{{indexData}}" wx:for-item="data" wx:key class="cu-item shadow"  catchtap="onPostTap" data-postid="{{indexData.paperId}}">
@@ -21,9 +26,9 @@
       <view class="desc">
         <view class='text-content'> {{data.description}}</view>
         <view>
-          <view wx:for="{{data.tags}}" wx:for-item="tag">
-            <view class='cu-tag bg-green light sm round'>{{tag.name}}</view>
-          </view>
+          <text wx:for="{{data.tags}}" wx:for-item="tag">
+            <text class='cu-tag bg-green light sm round'>{{tag.name}}</text>
+          </text>
         </view>
         <!-- <scroll-view scroll-x="true">
         <view wx:for="{{data.tags}}" wx:for-item="tag" style='flex-direction:row display:flex' >
