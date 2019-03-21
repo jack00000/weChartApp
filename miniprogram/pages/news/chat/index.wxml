@@ -1,3 +1,14 @@
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed gradual-pink" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <text class='icon-back' bindtap='jump2news'></text> chatting
+    </navigator>
+  </view>
+</view>
+
+
+<view class="margin-top">
+</view>
 <ad unit-id="adunit-e406b44681194b7e"></ad>
 <scroll-view upper-threshold="100" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}" scroll-y="true" focus="{{mode}}" enable-back-to-top="true" style="height: {{scroll_height}}px;" class="message-list">
 	<!-- 每一行 -->

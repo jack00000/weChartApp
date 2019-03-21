@@ -188,4 +188,9 @@ Page({
       toView: 'row_' + (this.data.message_list.length - 1)
     });
   },
+  jump2news:function(){
+    wx.redirectTo({
+      url: '../../news/news',
+    })
+  }
 })
