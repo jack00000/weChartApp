@@ -1,5 +1,6 @@
 //index.js
-const app = getApp();
+var app = getApp();
+var WxSearch = require('../../wxSearch/wxSearch.js') ;
 
 Page({
   data: {
@@ -204,22 +205,11 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var that = this;
-    wx.request({
-      url: 'https://app3.qdaily.com/wxapp/homes/index/0.json',
-      success: function (res) {
-        var data = res.data.response;
-        var swiperData = data.banners;
-        var feedsData = data.feeds;
-        var lastkey = data.last_key;
-        that.setData({
-          swiperData: swiperData,
-          feedsData: feedsData,
-          lastkey: lastkey,
-          avatarUrl: app.globalData.userInfo.avatarUrl
-        });
-      }
-    });
+    //初始化的时候渲染wxSearchdata
+    var that=this;
+    WxSearch.init(that, 43, ['weappdev', '小程序', 'wxParse', 'wxSearch', 'wxNotification']);debugger
+    WxSearch.initMindKeys(['weappdev.com', '微信小程序开发', '微信开发', '微信小程序']);
+    
     wx.request({
       url: 'http://localhost:8888/ssm/index/getIndexData',
       success: function (res) {
@@ -231,6 +221,38 @@ Page({
         });
       }
     })
+  },
+  wxSearchFn: function (e) {
+    var that = this
+    WxSearch.wxSearchAddHisKey(that);
+  },
+  wxSearchInput: function (e) {
+    var that = this
+    WxSearch.wxSearchInput(e, that);
+  },
+  wxSerchFocus: function (e) {
+    var that = this;debugger
+    WxSearch.wxSearchFocus(e, that);
+  },
+  wxSearchBlur: function (e) {
+    var that = this
+    WxSearch.wxSearchBlur(e, that);
+  },
+  wxSearchKeyTap: function (e) {
+    var that = this
+    WxSearch.wxSearchKeyTap(e, that);
+  },
+  wxSearchDeleteKey: function (e) {
+    var that = this
+    WxSearch.wxSearchDeleteKey(e, that);
+  },
+  wxSearchDeleteAll: function (e) {
+    var that = this;
+    WxSearch.wxSearchDeleteAll(that);
+  },
+  wxSearchTap: function (e) {
+    var that = this
+    WxSearch.wxSearchHiddenPancel(that);
   },
   onPostTap: function (evt) {
     var postid = evt.currentTarget.dataset.postid;debugger
@@ -244,7 +266,7 @@ Page({
       url: 'post/post-detail/post-detail?id=' + swiperid
     });
   },
-  // https://app3.qdaily.com/wxapp/homes/index/1497234291_946656000.json
+ 
   onReachBottom: function (event) {
     wx.showNavigationBarLoading();
     var that = this;

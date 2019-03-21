@@ -1,14 +1,15 @@
 
 <!--搜索栏 -->
+<!-- // 搜索输入框需要保证下面三个事件的书写正确 -->
 
-   <view class="cu-bar margin-top bg-red search" >
+<view class="cu-bar margin-top bg-red search" >
   <view class="cu-avatar round" style="background-image:url({{avatarUrl}});"></view>
   <view class='search-form radius'>
     <text class="icon-search"></text>
-    <input type="text" placeholder="搜索图片、文章、视频" confirm-type="search"></input>
+    <input type="text" placeholder="搜索图片、文章、视频" confirm-type="search" bindfocus="wxSerchFocus" bindinput="wxSearchInput" bindblur="wxSearchBlur"></input>
   </view>
   <view class='action'>
-    <text bindtap='topSearch'>search</text>
+    <text bindtap="wxSearchFn">search</text>
   </view>
 </view>
 

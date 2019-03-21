@@ -2,6 +2,7 @@
 @import "post/post-item/post-item-template.wxss";
 @import "post/post-item/post-view-template.wxss";
 @import "/wxParse/wxParse.wxss";
+@import "/wxSearch/wxSearch.wxss";
 
 page {
   background: #f6f6f6;

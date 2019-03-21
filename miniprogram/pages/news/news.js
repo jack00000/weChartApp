@@ -168,7 +168,7 @@ Page({
   },
   tochatview:function(){
     wx.redirectTo({
-      url: './chat/chat'
+      url: './chat/index'
     })
   },
   gotoIndex: function () {

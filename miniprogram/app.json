@@ -1,15 +1,15 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/news/chat/chat",
+ 
+        "pages/index/index",
+        "pages/news/chat/chat",
         "pages/new/new",
         "pages/welcome/welcome",
         "pages/my/my",
-        
         "pages/index/post/post",
         "pages/updatings/updatings",
         "pages/news/news",
-       
+        "pages/news/chat/index",
         "pages/index/post/post-detail/post-detail",
         "pages/index/post/post-item/post-item",
         "pages/my/myPosts/myPost",
