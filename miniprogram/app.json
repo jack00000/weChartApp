@@ -1,10 +1,11 @@
 {
   "pages": [
+    "pages/index/index",
     "pages/news/chat/chat",
         "pages/new/new",
         "pages/welcome/welcome",
         "pages/my/my",
-        "pages/index/index",
+        
         "pages/index/post/post",
         "pages/updatings/updatings",
         "pages/news/news",

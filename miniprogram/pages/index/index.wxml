@@ -1,8 +1,7 @@
 
 <!--搜索栏 -->
-<!-- <van-search value="{{ value }}" placeholder="请输入搜索关键词" /> -->
 
-<view class="cu-bar margin-top bg-red search">
+   <view class="cu-bar margin-top bg-red search" >
   <view class="cu-avatar round" style="background-image:url({{avatarUrl}});"></view>
   <view class='search-form radius'>
     <text class="icon-search"></text>
@@ -12,7 +11,9 @@
     <text bindtap='topSearch'>search</text>
   </view>
 </view>
-<scroll-view scroll-x class="bg-white nav" scroll-with-animation scroll-left="{{scrollLeft}}">
+
+
+  <scroll-view scroll-x class="bg-white nav" scroll-with-animation scroll-left="{{scrollLeft}}">
   <view class="cu-item {{index==TabCur?'text-green cur':''}}" wx:for="{{ColorList}}" wx:key bindtap='tabSelect' data-id="{{index}}">
     <view class='cu-tag bg-{{item.name}}'>{{item.title}}</view>
   </view>
@@ -42,6 +43,8 @@
     </view>
   </view>
 </view>
+
+
 
 <import src="../../template/nav" />
   <view class="flex fix_nav_wp">

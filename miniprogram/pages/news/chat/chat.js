@@ -17,6 +17,11 @@ Page({
         wx.stopPullDownRefresh();
       }
     })
+  },
+  jump2news:function(){
+    wx.redirectTo({
+      url: '../news',
+    })
   }
 
 });

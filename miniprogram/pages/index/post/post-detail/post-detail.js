@@ -43,7 +43,7 @@ Page({
     //   }
     // });
     wx.request({
-      url: 'http://localhost:8888/ssm/index/getIndexPaperDetailData?pid=10',
+      url: 'http://localhost:8888/ssm/index/getIndexPaperDetailData?pid=' + postid,
       success: (res) => {
         var content=res.data.respond.datas.content;
         WxParse.wxParse('article', 'html', content, that, 5);
