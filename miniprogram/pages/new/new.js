@@ -219,6 +219,37 @@ Page({
         wx.stopPullDownRefresh();
       }
     })
+  },
+  formSubmit:function(e){
+    var that = this;
+    var paper = e.detail.value;
+    console.log(e.detail.value); debugger
+    wx.request({
+      url: 'http://localhost:8983/solr/how2java/select?q=' + "name:" + e.detail.value.input,
+      method: 'post',
+      data: {
+         //这里是发送给服务器的参数（参数名：参数值） 
+        // uid:app.globalData.,
+        // cid:cid,
+        title: paper.title,
+        description:paper.description,
+        content:paper.content
+         
+
+      }, 
+      header: {
+        'content-type': 'application/x-www-form-urlencoded'  //这里注意POST请求content-type是小写，大写会报错  
+      },  
+      success: function (res) {
+        var indexData = res.data.respond; debugger
+
+        that.setData({
+          //爲什麽不行
+          indexData: indexData
+        });
+      }
+
+    })
   }
 
 })

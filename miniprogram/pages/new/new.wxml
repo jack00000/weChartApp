@@ -5,38 +5,41 @@
     </navigator>
   </view>
 </view>
-<form>
-
-  <view class="cu-form-group margin-top">
-    <view class='title'>title</view>
-    <input placeholder="两字短标题" class='radius' name='input'></input>
-  </view>
-  <view class="cu-form-group">
-    <view class='title'>decription</view>
-    <input placeholder="统一标题的宽度" class='radius' name='input'></input>
-  </view>
-  
-<view class="cu-form-group margin-top">
-    <view class="grid col-3 grid-square flex-sub">
-      <view class="padding-xs bg-img" style="background-image:url(https://image.weilanwl.com/img/square-1.jpg);">
+<form bindsubmit="formSubmit">
+       <view class="cu-form-group margin-top">
+        <view class='title'>category</view>
+        <input placeholder="两字短标题" class='radius' name='category'></input>
       </view>
-      <view class="padding-xs bg-img" style="background-image:url(https://image.weilanwl.com/img/square-2.jpg);">
-        <view class="cu-tag bg-red">
-          <text class='icon-close'></text>      
+      <view class="cu-form-group">
+        <view class='title'>title</view>
+        <input placeholder="两字短标题" class='radius' name='title'></input>
+      </view>
+      <view class="cu-form-group">
+        <view class='title'>decription</view>
+        <input placeholder="统一标题的宽度" class='radius' name='decription'></input>
+      </view>
+      
+    <view class="cu-form-group margin-top">
+        <view class="grid col-3 grid-square flex-sub">
+          <view class="padding-xs bg-img" style="background-image:url(https://image.weilanwl.com/img/square-1.jpg);">
+          </view>
+          <view class="padding-xs bg-img" style="background-image:url(https://image.weilanwl.com/img/square-2.jpg);">
+            <view class="cu-tag bg-red">
+              <text class='icon-close'></text>      
+            </view>
+          </view>
+          <view class="padding-xs solids">
+            <text class='icon-cameraadd'></text>
+          </view>
         </view>
       </view>
-      <view class="padding-xs solids">
-        <text class='icon-cameraadd'></text>
+      <view class="cu-form-group margin-top" wx:hide="{{modalName==null}}">
+        <textarea placeholder="多行文本输入框" maxlength="-1" disabled="{{modalName!=null}}" placeholder-class='placeholder' name="content"></textarea>
       </view>
-    </view>
-  </view>
-  <view class="cu-form-group margin-top" wx:hide="{{modalName==null}}">
-    <textarea placeholder="多行文本输入框" maxlength="-1" disabled="{{modalName!=null}}" placeholder-class='placeholder'></textarea>
-  </view>
-  <view class="margin-top">
-  <button class='cu-btn block line-orange lg' formType="submit">
-    <text class='icon-upload'></text>push</button>
-  </view>
+      <view class="margin-top">
+      <button class='cu-btn block line-orange lg' formType="submit">
+        <text class='icon-upload'></text>push</button>
+      </view>
 </form>
 
  
