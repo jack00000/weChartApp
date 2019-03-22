@@ -1,20 +1,19 @@
 
 <!--搜索栏 -->
-<!-- // 搜索输入框需要保证下面三个事件的书写正确 -->
+<form bindsubmit="formSubmit" >
+<view class="cu-bar search bg-white">
 
-<view class="cu-bar margin-top bg-red search" >
-  <view class="cu-avatar round" style="background-image:url({{avatarUrl}});"></view>
-  <view class='search-form radius'>
-    <text class="icon-search"></text>
-    <input type="text" placeholder="搜索图片、文章、视频" confirm-type="search" bindfocus="wxSerchFocus" bindinput="wxSearchInput" bindblur="wxSearchBlur"></input>
-  </view>
-  <view class='action'>
-    <text bindtap="wxSearchFn">search</text>
-  </view>
-</view>
+      <view class='search-form round'>
+        <text class="icon-search"></text>
+        <input type="text" placeholder="搜索图片、文章、视频" confirm-type="search" name="input"></input>
+      </view>
+      <view class='action'>
+        <button  class='cu-btn bg-green shadow-blur round' form-type='submit'>搜索</button>
+      </view>
+    </view>
+</form>  
 
-
-  <scroll-view scroll-x class="bg-white nav" scroll-with-animation scroll-left="{{scrollLeft}}">
+<scroll-view scroll-x class="bg-white nav" scroll-with-animation scroll-left="{{scrollLeft}}">
   <view class="cu-item {{index==TabCur?'text-green cur':''}}" wx:for="{{ColorList}}" wx:key bindtap='tabSelect' data-id="{{index}}">
     <view class='cu-tag bg-{{item.name}}'>{{item.title}}</view>
   </view>

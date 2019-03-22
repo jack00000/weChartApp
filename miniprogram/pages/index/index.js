@@ -10,6 +10,7 @@ Page({
     avatarUrl: '',
     userInfo: {},
     indexData:null,
+    searchData:null,
     logged: false,
     takeSession: false,
     requestResult: '',
@@ -223,8 +224,15 @@ Page({
     })
   },
   wxSearchFn: function (e) {
-    var that = this
-    WxSearch.wxSearchAddHisKey(that);
+   wx.request({
+     url: 'http://localhost:8983/solr/how2java/select?q=name:鸭绒',
+     success: function (res) {
+       var indexData = res.data.respond; debugger
+       that.setData({
+         searchData: searchData
+       });
+     }
+   })
   },
   wxSearchInput: function (e) {
     var that = this
@@ -438,6 +446,23 @@ Page({
   topSearch:function(e){
       debugger
       //从后台查询文章数据用于显示 包含1.简介数据 2. 具体内容数据
+  },
+  formSubmit:function(e){
+    var that=this;
+    var name=e;
+    console.log(e.detail.value);debugger
+    wx.request({
+      url: 'http://localhost:8983/solr/how2java/select?q=' + "name:" + e.detail.value.input,
+      success:function(res){
+        var indexData = res.data.respond; debugger
+     
+        that.setData({
+          //爲什麽不行
+          indexData: indexData
+        });
+      }
+      
+    })
   }
 
   

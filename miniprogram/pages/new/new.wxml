@@ -34,7 +34,7 @@
     <textarea placeholder="多行文本输入框" maxlength="-1" disabled="{{modalName!=null}}" placeholder-class='placeholder'></textarea>
   </view>
   <view class="margin-top">
-  <button class='cu-btn block line-orange lg'>
+  <button class='cu-btn block line-orange lg' formType="submit">
     <text class='icon-upload'></text>push</button>
   </view>
 </form>
