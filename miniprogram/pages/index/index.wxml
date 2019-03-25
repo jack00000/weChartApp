@@ -15,7 +15,7 @@
 
 <scroll-view scroll-x class="bg-white nav" scroll-with-animation scroll-left="{{scrollLeft}}">
   <view class="cu-item {{index==TabCur?'text-green cur':''}}" wx:for="{{ColorList}}" wx:key bindtap='tabSelect' data-id="{{index}}">
-    <view class='cu-tag bg-{{item.name}}'>{{item.title}}</view>
+    <view class='cu-tag bg-{{item.name}}' bindtap='searchBycate'>{{item.title}}</view>
   </view>
 </scroll-view>
 

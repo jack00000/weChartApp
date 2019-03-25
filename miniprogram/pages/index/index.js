@@ -208,13 +208,13 @@ Page({
   onLoad: function (options) {
     //初始化的时候渲染wxSearchdata
     var that=this;
-    WxSearch.init(that, 43, ['weappdev', '小程序', 'wxParse', 'wxSearch', 'wxNotification']);debugger
+    WxSearch.init(that, 43, ['weappdev', '小程序', 'wxParse', 'wxSearch', 'wxNotification']);
     WxSearch.initMindKeys(['weappdev.com', '微信小程序开发', '微信开发', '微信小程序']);
     
     wx.request({
       url: 'http://localhost:8888/ssm/index/getIndexData',
       success: function (res) {
-        var indexData = res.data.respond.datas;debugger
+        var indexData = res.data.respond.datas;
 
         that.setData({
           //爲什麽不行
@@ -227,7 +227,7 @@ Page({
    wx.request({
      url: 'http://localhost:8983/solr/how2java/select?q=name:鸭绒',
      success: function (res) {
-       var indexData = res.data.respond; debugger
+       var indexData = res.data.respond; 
        that.setData({
          searchData: searchData
        });
@@ -239,7 +239,7 @@ Page({
     WxSearch.wxSearchInput(e, that);
   },
   wxSerchFocus: function (e) {
-    var that = this;debugger
+    var that = this;
     WxSearch.wxSearchFocus(e, that);
   },
   wxSearchBlur: function (e) {
@@ -263,7 +263,7 @@ Page({
     WxSearch.wxSearchHiddenPancel(that);
   },
   onPostTap: function (evt) {
-    var postid = evt.currentTarget.dataset.postid;debugger
+    var postid = evt.currentTarget.dataset.postid;
     wx.navigateTo({
       url: 'post/post-detail/post-detail?id=' + postid
     });
@@ -302,7 +302,7 @@ Page({
     wx.request({
       url: 'https://app3.qdaily.com/wxapp/homes/index/0.json',
       success: function (res) {
-        var data = res.data.response;debugger;
+        var data = res.data.response;;
         var swiperData = data.banners;
         var feedsData = data.feeds;
         var lastkey = data.last_key;
@@ -404,7 +404,7 @@ Page({
     })
   },
   gotoUpdating: function () {
-    debugger;
+    ;
     wx.redirectTo({
       url: '../updatings/updatings',
     })
@@ -444,17 +444,17 @@ Page({
     })
   },
   topSearch:function(e){
-      debugger
+      
       //从后台查询文章数据用于显示 包含1.简介数据 2. 具体内容数据
   },
   formSubmit:function(e){
     var that=this;
     var name=e;
-    console.log(e.detail.value);debugger
+    console.log(e.detail.value);
     wx.request({
       url: 'http://localhost:8983/solr/how2java/select?q=' + "name:" + e.detail.value.input,
       success:function(res){
-        var indexData = res.data.respond; debugger
+        var indexData = res.data.respond; 
      
         that.setData({
           //爲什麽不行
@@ -463,6 +463,9 @@ Page({
       }
       
     })
+  },
+  searchBycate:function(e){
+    console.log(e.currentTarget.dataset.title);
   }
 
   
