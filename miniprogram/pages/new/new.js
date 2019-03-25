@@ -250,6 +250,13 @@ Page({
       }
 
     })
+  },
+  //跳转到编辑页面
+  junp2edit:function(evt){
+    var postid = evt.currentTarget.dataset.postid;
+    wx.navigateTo({
+      url: 'editor/editor'
+    });
   }
 
 })

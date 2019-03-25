@@ -262,6 +262,7 @@ Page({
     var that = this
     WxSearch.wxSearchHiddenPancel(that);
   },
+  // 跳转到文章详情页面
   onPostTap: function (evt) {
     var postid = evt.currentTarget.dataset.postid;
     wx.navigateTo({

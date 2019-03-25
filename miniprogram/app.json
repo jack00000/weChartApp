@@ -1,9 +1,10 @@
 {
   "pages": [
- 
+  
         "pages/index/index",
         "pages/news/chat/chat",
         "pages/new/new",
+      "pages/new/editor/editor",
         "pages/welcome/welcome",
         "pages/my/my",
         "pages/index/post/post",

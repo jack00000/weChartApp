@@ -33,9 +33,9 @@
           </view>
         </view>
       </view>
-      <view class="cu-form-group margin-top" wx:hide="{{modalName==null}}">
-        <textarea placeholder="多行文本输入框" maxlength="-1" disabled="{{modalName!=null}}" placeholder-class='placeholder' name="content"></textarea>
-      </view>
+      <button class="padding-xl radius shadow-blur bg-white margin-top" style='width:100% height:50%' bindtap='junp2edit'>
+      content
+      </button> 
       <view class="margin-top">
       <button class='cu-btn block line-orange lg' formType="submit">
         <text class='icon-upload'></text>push</button>
