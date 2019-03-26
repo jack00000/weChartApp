@@ -243,6 +243,14 @@ Page({
     wx.redirectTo({
       url: './list/myGithub/myGithub',
     })
+  },
+  /**
+   * 跳转到具体页面
+   */
+  jump2detail:function(){
+    wx.redirectTo({
+      url: './myPosts/myPost',
+    })
   }
   
 })

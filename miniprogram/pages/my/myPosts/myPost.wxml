@@ -1,2 +1,26 @@
-<!--miniprogram/pages/my/myPosts/myPost.wxml-->
-<text>miniprogram/pages/my/myPosts/myPost.wxml</text>
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed bg-gradual-pink" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <text class='icon-back' bindtap="jump2my"></text>
+      时间轴
+    </navigator>
+  </view>
+</view>
+
+<view class="cu-timeline" wx:for="{{[1,2,3,4,5,6,7]}}" wx:for-item="i" >
+  <view class="cu-time">06-17</view>
+  <view class="cu-item">
+    <view class="content">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-cyan">上午</view>
+        <view class="cu-tag line-cyan">10:00</view>
+      </view>
+      <view class='margin-top'>我用接口工具postman 访问啦下bike接口  发现  
+请求参数 history 为false  所有车辆数据字段history(是否是历史数据) 都为false
+其他参数不变 history 为true 所有数据history(是否是历史数据)都为true(与之前理解冲突)
+按照之前的理解 history 为true 包含历史数据和最新数据 所以返回数据的history 应该有fasle 也有true
+- 返回数据有几十万 我以偏概全啦.。</view>
+    </view>
+  </view>
+
+</view>

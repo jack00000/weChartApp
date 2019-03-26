@@ -1,7 +1,11 @@
 <import src="../../../wxParse/wxParse.wxml" />
 <view class="container">
   <template is="wxParse" data="{{wxParseData:article.nodes}}"></template>
+   <view class="margin-top">
+      <button class='cu-btn block line-orange lg' bindtap='getConnect'>
+        <text class='icon-pay'></text>Paid counseling</button>
+      </view>
   <view class="WxComment">
   <WxComment tipOne="Markdown " tipTwo="will be supported, Powered by yicm." submitBtnText="回复" articleID="{{article_id}}" contentLen='1'></WxComment>
-</view>
+   </view>
 </view>

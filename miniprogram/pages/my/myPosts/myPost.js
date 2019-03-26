@@ -62,5 +62,10 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  jump2my:function(){
+    wx.redirectTo({
+      url: '../my',
+    })
   }
 })

@@ -128,6 +128,13 @@ Page({
         });
       }
     })
+  },
+  //与作者获得联系
+  getConnect:function(){
+     //通过当前页面文章id 获得作者id
+     wx.redirectTo({
+       url: '../../../news/chat/index',
+     })
   }
 
 })
