@@ -8,15 +8,15 @@
 <form bindsubmit="formSubmit">
        <view class="cu-form-group margin-top">
         <view class='title'>category</view>
-        <input placeholder="两字短标题" class='radius' name='category'></input>
+        <input placeholder="文章所属类别" class='radius' name='category'></input>
       </view>
       <view class="cu-form-group">
         <view class='title'>title</view>
-        <input placeholder="两字短标题" class='radius' name='title'></input>
+        <input placeholder="文章标题" class='radius' name='title'></input>
       </view>
       <view class="cu-form-group">
         <view class='title'>decription</view>
-        <input placeholder="统一标题的宽度" class='radius' name='decription'></input>
+        <input placeholder="文章简要描述" class='radius' name='decription'></input>
       </view>
       
     <view class="cu-form-group margin-top">
