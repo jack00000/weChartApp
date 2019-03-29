@@ -215,7 +215,6 @@ Page({
       url: 'http://localhost:8888/ssm/index/getIndexData?index=0&pagesize=10',
       success: function (res) {
         var indexData = res.data.respond.datas;
-
         that.setData({
           indexData : indexData 
         });
