@@ -212,12 +212,11 @@ Page({
     WxSearch.initMindKeys(['weappdev.com', '微信小程序开发', '微信开发', '微信小程序']);
     
     wx.request({
-      url: 'http://localhost:8888/ssm/index/getIndexData',
+      url: 'http://localhost:8888/ssm/index/getIndexData?index=0&pagesize=10',
       success: function (res) {
         var indexData = res.data.respond.datas;
 
         that.setData({
-          //爲什麽不行
           indexData : indexData 
         });
       }

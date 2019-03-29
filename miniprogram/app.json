@@ -1,7 +1,8 @@
 {
   "pages": [
+      "pages/index/index",
         "pages/new/new",
-        "pages/index/index",
+      
         "pages/news/chat/chat",  
         "pages/new/editor/editor",
         "pages/welcome/welcome",
