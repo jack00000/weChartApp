@@ -11,14 +11,14 @@ Page({
   data: {
     message_list: [{
         myself: 0,
-        head_img_url: 'https://wx.qlogo.cn/mmopen/vi_32/njwaSUP5DiabKEr626aBGHEhibiaAEFLqungTIkqq4WibYRBXcWnCdwBDqbibsZBo67O3ic0O56ZLAUicyKg0RwJ08sSg/0',
+      head_img_url: 'https://avatars2.githubusercontent.com/u/18373908?s=460&v=4',
         'msg_type': 'text',
         'content': 'scroll-into-view，默认不带动画，因此加上scroll-with-animation="true"属性，它的默认值是false的',
         create_time: '2018-07-31 14:00:19'
       },
       {
         myself: 1,
-        head_img_url: 'http://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83eqSucF9v6bKPfUPSTuQjpqmr8jAZEOgsFjFCHc73UIlUAgnI2nz6aFdnkRWAxxy1uZGfC82Yp7fMg/0',
+        head_img_url: 'https://avatars2.githubusercontent.com/u/18373908?s=460&v=4',
         'msg_type': 'image',
         'content': 'http://img13.360buyimg.com/cms/jfs/t3028/328/2417978329/220902/f29f6c36/57d8b3fbNc03f8716.jpg',
         create_time: '2018-07-31 17:20:39'
@@ -48,7 +48,7 @@ Page({
     var message_list = this.data.message_list;
     var message = {
       myself: 1,
-      head_img_url: 'http://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83eqSucF9v6bKPfUPSTuQjpqmr8jAZEOgsFjFCHc73UIlUAgnI2nz6aFdnkRWAxxy1uZGfC82Yp7fMg/0',
+      head_img_url: 'https://avatars2.githubusercontent.com/u/18373908?s=460&v=4',
       'msg_type': 'text',
       'content': content,
       create_time: '2018-07-31 21:04:31'
@@ -169,7 +169,7 @@ Page({
     var message_list = this.data.message_list;
     var message = {
       myself: 1,
-      head_img_url: 'http://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83eqSucF9v6bKPfUPSTuQjpqmr8jAZEOgsFjFCHc73UIlUAgnI2nz6aFdnkRWAxxy1uZGfC82Yp7fMg/0',
+      head_img_url: 'https://avatars2.githubusercontent.com/u/18373908?s=460&v=4',
       'msg_type': type,
       'content': tempFilePath,
       create_time: '2018-07-31 17:20:39'

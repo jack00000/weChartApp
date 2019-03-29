@@ -189,7 +189,13 @@ Page({
       contents.push({ 'type': n.type, 'src': n.value})
     })
     form.content = JSON.stringify(contents);
-
+    wx.setStorage({
+      key: "form",
+      data: form
+    })
+    wx.navigateTo({
+      url: '../new',
+    })
     console.log(form);
   },
 })
