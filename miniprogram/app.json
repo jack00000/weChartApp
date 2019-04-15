@@ -1,8 +1,8 @@
 {
   "pages": [
+    "pages/news/tuling/tuling",
       "pages/index/index",
         "pages/new/new",
-      
         "pages/news/chat/chat",  
         "pages/new/editor/editor",
         "pages/welcome/welcome",
