@@ -218,5 +218,10 @@ Page({
 
 
   },
+  jump2robot:function(){
+    wx.redirectTo({
+      url: '../tuling/tuling',
+    })
+  }
 
 })

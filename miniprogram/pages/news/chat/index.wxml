@@ -1,10 +1,14 @@
-<view class="cu-custom" style="height:{{CustomBar}}px;">
-  <view class="cu-bar fixed gradual-pink" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
-    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
-      <text class='icon-back' bindtap='jump2news'></text> chatting
+<view class="cu-custom">
+  <view class="cu-bar fixed gradual-pink" >
+    <navigator class='action' >
+      <text class='icon-back' bindtap='jump2news'>chatting</text> 
+      <view  class='icon-android' bindtap='jump2robot' style='float：right'>robot</view> 
+       
     </navigator>
   </view>
 </view>
+
+
 
 
 <view class="margin-top">

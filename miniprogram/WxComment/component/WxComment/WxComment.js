@@ -1,4 +1,4 @@
-﻿/*
+/*
 * author: yicm1102@gmail.com
 * github: https://github.com/yicm/WxComment
 * github_page: https://yicm.github.io
