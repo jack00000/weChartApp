@@ -451,8 +451,8 @@ Page({
     var name=e;
     console.log(e.detail.value);
     wx.request({
-      url: 'http://localhost:8983/solr/how2java/select?q=' + "name:" + e.detail.value.input,
-      success:function(res){
+      url: 'http://localhost:8983/solr/paper/select?q=' + "tags:" + e.detail.value.input,
+      success:function(res){debugger
         var indexData = res.data.respond; 
      
         that.setData({

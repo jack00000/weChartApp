@@ -47,6 +47,7 @@ Page({
     wx.request({
       url: 'http://www.tuling123.com/openapi/api?key=' + key + '&info=' + isay,
       success: function (res) {
+        debugger
         let tuling = res.data.text;
         obj.robot = tuling;
         obj.isay = isay;

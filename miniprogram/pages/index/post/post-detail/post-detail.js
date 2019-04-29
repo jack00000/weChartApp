@@ -132,9 +132,25 @@ Page({
   //与作者获得联系
   getConnect:function(){
      //通过当前页面文章id 获得作者id
-     wx.redirectTo({
-       url: '../../../news/chat/index',
-     })
+    wx.showModal({
+      title: '提示',
+      content: '你已支付5元',
+      success: function (res) {
+        if (res.confirm) {
+          console.log('用户点击确定')
+        } else {
+          console.log('用户点击取消')
+        }
+
+      }
+    })
+    setTimeout(function () {
+      wx.hideToast()
+      wx.redirectTo({
+        url: '../../../news/chat/index',
+      })
+    }, 3000)
+    
   }
 
 })
