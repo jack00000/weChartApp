@@ -7,7 +7,7 @@
   </view>
 </view>
 
-<view class="cu-timeline" wx:for="{{[1,2,3,4,5,6,7]}}" wx:for-item="i" >
+<view class="cu-timeline" wx:for="{{[1]}}" wx:for-item="i" >
   <view class="cu-time">06-17</view>
   <view class="cu-item">
     <view class="content">
@@ -22,5 +22,20 @@
 - 返回数据有几十万 我以偏概全啦.。</view>
     </view>
   </view>
+
+
+</view>
+<view class="cu-timeline" wx:for="{{[1,2,3,4,5,6,7]}}" wx:for-item="i" >
+  <view class="cu-time">06-17</view>
+  <view class="cu-item">
+    <view class="content">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-cyan">上午</view>
+        <view class="cu-tag line-cyan">10:00</view>
+      </view>
+      <view class='margin-top'> 适配器模式要达到的目的：在计算机编程中，适配器模式（有时候也称包装样式或者包装）将一个类的接口适配成用户所期待的。一个适配允许通常因为接口不兼容而不能在一起工作的类工作在一起，做法是将类自己的接口包裹在一个已存在的类中。</view>
+    </view>
+  </view>
+  
 
 </view>

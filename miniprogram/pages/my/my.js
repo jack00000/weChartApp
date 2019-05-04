@@ -244,6 +244,12 @@ Page({
       url: './list/myGithub/myGithub',
     })
   },
+  toMyBolgView: function () {
+    wx.redirectTo({
+      url: './list/myBolg/myBolg',
+    })
+  },
+
   /**
    * 跳转到具体页面
    */

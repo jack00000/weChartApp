@@ -56,6 +56,12 @@
   </view>
 </view>
 <view class="cu-list menu {{menuBorder?'sm-border':''}} {{menuCard?'card-menu margin-top':''}}">
+<view class="cu-item {{menuArrow?'arrow':''}}" bindtap='toMyBolgView'>
+    <view class='content'>
+      <image src='/images/logo.png' class='png' mode='aspectFit'></image>
+      <text class='text-grey'>My Bolg</text>
+    </view>
+  </view>
   <view class="cu-item {{menuArrow?'arrow':''}}">
     <view class='content'>
       <text class='icon-circlefill text-grey'></text>

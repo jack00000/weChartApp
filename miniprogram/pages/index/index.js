@@ -214,8 +214,9 @@ Page({
     wx.request({
       url: 'http://localhost:8888/ssm/index/getIndexData?index=0&pagesize=10',
       success: function (res) {
-        var indexData = res.data.respond.datas;
+        var indexData = res.data.respond.datas; debugger
         that.setData({
+          
           indexData : indexData 
         });
       }
@@ -446,21 +447,66 @@ Page({
       
       //从后台查询文章数据用于显示 包含1.简介数据 2. 具体内容数据
   },
-  formSubmit:function(e){
+  formSubmit1:function(e){
     var that=this;
-    var name=e;
+    var name = e; debugger
     console.log(e.detail.value);
     wx.request({
-      url: 'http://localhost:8983/solr/paper/select?q=' + "tags:" + e.detail.value.input,
+      url: 'http://localhost:8888/ssm/index/getIndexData?index=1&pagesize=20',
       success:function(res){debugger
-        var indexData = res.data.respond; 
-     
+        var indexData = res.data.respond.datas; debugger
         that.setData({
-          //爲什麽不行
           indexData: indexData
         });
       }
       
+    })
+  },
+  formSubmit: function (e) {
+    var that = this;
+    var name = e.detail.value.input; debugger
+    console.log(e.detail.value);
+    wx.request({
+      url: 'http://localhost:8983/solr/paper/select?q=description:'+name,
+      success: function (res) {
+        debugger
+        //定义数组对象存储solr取出来的所需信息
+        var indexData =new Array();
+        
+        var numFound = res.data.response.numFound;
+        if(numFound>10){
+          numFound=10;
+        }
+        var dates=res.data.response.docs;debugger
+        for (var i = 0; i < numFound ; i++) {
+          var obj=new Object();
+          var tags = new Array();
+          for (var j = 0; j < tags.length; j++) {
+          tags[j] = dates[i].tags;
+          }
+          obj.tags = tags[i];debugger
+          obj.imgUrl ="https://image.weilanwl.com/img/4x3-1.jpg";
+          if (dates[i].id!=null){
+            obj.paperId = dates[i].id;
+          }
+          if (dates[i].description!=null){
+            obj.description = dates[i].description;
+          }
+          if (dates[i].title!=null){
+            obj.title = dates[i].title;
+          }  
+          
+          indexData[i]=obj;
+          
+        }
+        
+        
+debugger
+        that.setData({
+          indexData: indexData
+        });
+      }
+
     })
   },
   searchBycate:function(e){

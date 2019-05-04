@@ -11,25 +11,25 @@
 </view>
 
 <view class="cu-card dynamic {{isCard?'no-card':''}}">
-<view wx:for="{{feedsData}}" wx:for-item="feeds" wx:key class="cu-item shadow"  catchtap="onPostTap" data-postid="{{feeds.post.id}}">
+<view wx:for="{{1}}" wx:for-item="feeds" wx:key class="cu-item shadow"  catchtap="onPostTap" data-postid="{{feeds.post.id}}">
   <view wx:for="1" wx:key class="cu-item shadow">
     <view class="cu-list menu menu-avatar">
       <view class="cu-item">
         <view class="cu-avatar round lg" style="background-image:url(https://image.weilanwl.com/img/square-1.jpg);"></view>
         <view class='content flex-sub'>
-          <view>晓晓萌</view>
+          <view>DEMO</view>
           <view class='text-gray text-sm flex justify-between'>
-            2018年12月3日
+            2019年5月3日
           </view>
         </view>
       </view>
     </view>
     <!-- 动态简介 -->
     <view class='text-content'>
-      你们的铲屎官是不是经常突然对手机傻笑？我家铲屎官常常坐沙发上笑的发抖！（暗中观察.jpg）
+      新增文章
     </view>
     <view class="grid {{isCard?'col-3 grid-square':'col-1'}} flex-sub padding-lr">
-      <view class="bg-img {{isCard?'':'only-img'}}" style="background-image:url(https://image.weilanwl.com/img/square-1.jpg);" wx:for="{{isCard?9:1}}" wx:key>
+      <view class="bg-img {{isCard?'':'only-img'}}" style="background-image:url(http://pqs0u4xh1.bkt.clouddn.com/6.jpeg);" wx:for="{{isCard?9:1}}" wx:key>
       </view>
     </view>
     <!-- 點贊 評論數量 -->
@@ -38,26 +38,40 @@
       <text class="icon-appreciatefill"></text> 20
       <text class="icon-messagefill"></text> 30
     </view>
-    <!-- 动态的评论信息 -->
-    <view class="cu-list menu menu-avatar comment solids-top">
-      <view class="cu-item" wx:for="{{2}}" wx:key>
-        <view class="cu-avatar round" style="background-image:url(https://image.weilanwl.com/img/square-1.jpg);"></view>
-        <view class='content'>
-          <view class='text-grey'>猪皮蛋</view>
-          <view class='text-gray text-content text-df'>
-            我家铲屎官不舔毛，还抠脚！
+    
+  </view>
+</view>
+</view>
+
+<view class="cu-card dynamic {{isCard?'no-card':''}}">
+<view wx:for="{{1}}" wx:for-item="feeds" wx:key class="cu-item shadow"  catchtap="onPostTap" data-postid="{{feeds.post.id}}">
+  <view wx:for="1" wx:key class="cu-item shadow">
+    <view class="cu-list menu menu-avatar">
+      <view class="cu-item">
+        <view class="cu-avatar round lg" style="background-image:url(https://image.weilanwl.com/img/square-1.jpg);"></view>
+        <view class='content flex-sub'>
+          <view>DEMO</view>
+          <view class='text-gray text-sm flex justify-between'>
+            2019年5月3日
           </view>
-          <!-- 评论者的评论信息 -->
-          <view class='bg-grey padding-sm radius margin-top-sm  text-sm' wx:if="{{index==1}}">
-            <view class="flex {{index!=0?'margin-top-sm':'' }}" wx:for="{{2}}" wx:key>
-              <view>我：</view>
-              <view class='flex-sub'>我家的铲屎官也不舔毛！</view>
-            </view>
-          </view>
-         
         </view>
       </view>
     </view>
+    <!-- 动态简介 -->
+    <view class='text-content'>
+      新增文章2
+    </view>
+    <view class="grid {{isCard?'col-3 grid-square':'col-1'}} flex-sub padding-lr">
+      <view class="bg-img {{isCard?'':'only-img'}}" style="background-image:url(http://pqs0u4xh1.bkt.clouddn.com/11.jpeg);" wx:for="{{isCard?9:1}}" wx:key>
+      </view>
+    </view>
+    <!-- 點贊 評論數量 -->
+    <view class='text-gray text-sm text-right padding'>
+      <text class="icon-attentionfill"></text> 10
+      <text class="icon-appreciatefill"></text> 20
+      <text class="icon-messagefill"></text> 30
+    </view>
+    
   </view>
 </view>
 </view>
